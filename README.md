@@ -1,60 +1,64 @@
-# Digitalización de Actas — FCV
+🇬🇧 English | 🇪🇸 [Versión en español](README.es.md)
 
-Pipeline para digitalizar y hacer buscables las actas físicas de "Conocimiento de Políticas de Seguridad de la Información" — formularios manuscritos, uno por sede, con varias personas firmando por hoja.
+---
 
-Lo construí durante mi práctica profesional en el área de **Ciberseguridad** de la **Fundación Cardiovascular de Colombia (FCV)**. El pedido original era un Excel indexado a mano (sede, cédula, nombre, en qué PDF está cada quien); esto lo automatiza de punta a punta.
+# Actas Digitization — FCV
 
-## Qué hace
+Pipeline to digitize and make searchable physical "Information Security Policy Acknowledgment" records — handwritten forms, one per site, with multiple people signing per page.
 
-**Pipeline principal** (en este orden):
+I built this during my professional internship in the **Cybersecurity** area at **Fundación Cardiovascular de Colombia (FCV)**. The original request was a manually indexed Excel sheet (site, ID number, name, which PDF each person is in); this automates the whole thing end to end.
 
-1. **`dividir_pdfs.py`** — separa los PDF de varias páginas (uno por sede, con todas las actas juntas) en un PDF por página/acta. Necesario porque el nivel gratis de Azure solo analiza las primeras 2 páginas de cada documento que le mandes.
-2. **`procesar_actas.py`** — le hace OCR a cada acta con [Azure AI Document Intelligence](https://azure.microsoft.com/products/ai-services/ai-document-intelligence) (maneja manuscrita + detecta la tabla real, no texto plano), extrae cédula/nombre/sede, limpia el nombre (solo letras, un espacio entre palabras, Mayúscula Inicial), organiza cada PDF en carpetas por sede, y genera `actas_index.xlsx` + `data.js`.
-3. **Revisión manual** — abres `actas_index.xlsx`, corriges lo que haga falta, y borras el "SÍ" de la columna Revisar en las filas que ya verificaste.
-4. **`actualizar_buscador_desde_excel.py`** — regenera `data.js` a partir del Excel ya corregido, para que el buscador quede sincronizado sin editar nada a mano.
-5. **`buscador_actas.html`** — el buscador en sí: una sola página (sin backend, sin instalar nada) para filtrar por cédula, nombre o sede, con botones para ver o descargar el PDF de cada quien.
+## What it does
 
-**Para probar sin datos reales:**
+**Main pipeline** (in this order):
 
-- **`generar_actas_prueba.py`** — genera actas ficticias con la misma estructura de tabla, para probar todo el pipeline sin depender de documentos reales.
+1. **`dividir_pdfs.py`** — splits multi-page PDFs (one per site, with all records together) into one PDF per page/record. Needed because Azure's free tier only analyzes the first 2 pages of any document you send it.
+2. **`procesar_actas.py`** — runs OCR on each record with [Azure AI Document Intelligence](https://azure.microsoft.com/products/ai-services/ai-document-intelligence) (handles handwriting + detects the actual table, not plain text), extracts ID number/name/site, cleans up the name (letters only, single spaces, Title Case), organizes each PDF into folders by site, and generates `actas_index.xlsx` + `data.js`.
+3. **Manual review** — open `actas_index.xlsx`, fix whatever needs fixing, and clear the "SÍ" in the Review column for rows you've already verified.
+4. **`actualizar_buscador_desde_excel.py`** — regenerates `data.js` from the corrected Excel, so the search tool stays in sync without editing anything by hand.
+5. **`buscador_actas.html`** — the search tool itself: a single page (no backend, nothing to install) to filter by ID number, name, or site, with buttons to view or download each person's PDF.
 
-## Sobre la precisión
+**To test without real data:**
 
-Esto no reemplaza una revisión humana final. La letra manuscrita de cada persona varía muchísimo — algunas son perfectamente legibles, otras casi ilegibles ni para un humano — y la ortografía de nombres poco comunes puede confundirse fácilmente con errores de OCR (un nombre real pero raro y un nombre mal leído se ven parecido, y el sistema no siempre puede distinguirlos). Por eso cada fila que Azure no leyó con confianza queda marcada "revisar" en vez de darse por buena en silencio — pero eso reduce cuánto hay que revisar a mano, no lo elimina. Se evaluó y se descartó a propósito "corregir" nombres contra un diccionario genérico de nombres en español: el riesgo de que "corrija" un nombre real pero inusual hacia uno más común (y equivocado) es mayor que el problema que resolvería.
+- **`generar_actas_prueba.py`** — generates fake records with the same table structure, to test the whole pipeline without depending on real documents.
 
-## Por qué quedó así
+## On accuracy
 
-- **OCR en la nube en vez de local (Tesseract)**: las actas son manuscritas y en tabla con bordes reales — Tesseract ni siquiera leía bien el texto impreso del encabezado. Azure Document Intelligence sí está hecho para eso, y el nivel gratis (F0, 500 páginas/mes) cubre el volumen real sin costo.
-- **Filas marcadas "revisar" en vez de asumir que todo salió bien**: si el nombre/cédula quedaron muy cortos, o Azure tuvo poca confianza al leer una palabra (aunque el dato se vea completo), la fila se marca para revisión humana en vez de darse por buena en silencio.
-- **Cada PDF se organiza, no se renombra por persona**: como cada página tiene varias personas, el archivo pertenece a todas ellas — se organiza por sede, no se le pone el nombre de una sola.
-- **El Excel es la fuente de verdad después de la primera pasada**: una vez lo revisas y corriges a mano, `actualizar_buscador_desde_excel.py` es el único comando que hace falta correr — nunca se edita `data.js` directamente.
+This doesn't replace a final human review. Handwriting varies a lot from person to person — some is perfectly legible, some is barely readable even for a human — and unusual name spellings can easily be confused with OCR errors (a real but uncommon name and a misread name can look alike, and the system can't always tell them apart). That's why any row Azure didn't read with confidence gets flagged for review instead of being silently accepted — but that reduces how much needs manual review, it doesn't eliminate it. "Correcting" names against a generic Spanish name dictionary was considered and deliberately ruled out: the risk of it "correcting" a real but unusual name into a more common (and wrong) one outweighs the problem it would solve.
 
-## Nota sobre los datos
+## Why it's built this way
 
-Este repo **no incluye** ninguna acta real, el Excel generado, ni `data.js` — esos archivos tienen cédulas y nombres reales de empleados y quedan excluidos vía `.gitignore`. Para probar el pipeline sin datos reales, usa `generar_actas_prueba.py`, que genera actas ficticias con la misma estructura de tabla.
+- **Cloud OCR instead of local (Tesseract)**: the records are handwritten, in a real bordered table — Tesseract couldn't even read the printed header text reliably. Azure Document Intelligence is built for exactly this, and the free tier (F0, 500 pages/month) covers the real volume at no cost.
+- **Rows flagged "review" instead of assuming everything's fine**: if the name/ID came out too short, or Azure had low confidence reading a word (even if the value looks complete), the row gets flagged for human review instead of being trusted silently.
+- **Each PDF gets organized, not renamed per person**: since each page has several people on it, the file belongs to all of them — it gets organized by site, not named after just one person.
+- **The Excel is the source of truth after the first pass**: once you review and correct it by hand, `actualizar_buscador_desde_excel.py` is the only command you need to run — `data.js` is never edited directly.
 
-## Cómo correrlo
+## About the data
+
+This repo does **not** include any real record, the generated Excel, or `data.js` — those files contain real employee names and ID numbers and are excluded via `.gitignore`. To test the pipeline without real data, use `generar_actas_prueba.py`, which generates fake records with the same table structure.
+
+## How to run it
 
 ```bash
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 
-# Credenciales de Azure Document Intelligence (nivel Free F0)
-export AZURE_DOCINTEL_ENDPOINT="https://TU-RECURSO.cognitiveservices.azure.com/"
-export AZURE_DOCINTEL_KEY="tu-clave"
+# Azure Document Intelligence credentials (Free F0 tier)
+export AZURE_DOCINTEL_ENDPOINT="https://YOUR-RESOURCE.cognitiveservices.azure.com/"
+export AZURE_DOCINTEL_KEY="your-key"
 
-# Probar con actas ficticias (no hace falta tener actas reales)
+# Test with fake records (no real documents needed)
 python generar_actas_prueba.py
 python dividir_pdfs.py
 python procesar_actas.py
 
-# Después de revisar/corregir actas_index.xlsx a mano:
+# After reviewing/correcting actas_index.xlsx by hand:
 python actualizar_buscador_desde_excel.py
 
-# Abrir buscador_actas.html en el navegador
+# Open buscador_actas.html in the browser
 ```
 
 ## Stack
 
-Python (Azure AI Document Intelligence, PyMuPDF, openpyxl) + HTML/CSS/JS sin frameworks para el buscador.
+Python (Azure AI Document Intelligence, PyMuPDF, openpyxl) + framework-free HTML/CSS/JS for the search tool.
