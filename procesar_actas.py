@@ -68,7 +68,7 @@ SEDES_CONOCIDAS_ARCHIVO = Path("./sedes.txt")
 CARPETA_ORGANIZADAS = Path("./actas_organizadas")
 COPIAR_EN_VEZ_DE_MOVER = True   # True = conserva los PDF originales intactos
 
-DEBUG_OCR = True
+DEBUG_OCR = False
 UMBRAL_CONFIANZA = 0.75  # celdas donde Azure no estaba seguro se marcan "revisar"
                           # aunque el nombre/cédula se vean completos. Súbelo (ej.
                           # 0.85) si quieres que revise MÁS filas a mano; bájalo
@@ -93,6 +93,15 @@ PAUSA_ENTRE_LLAMADAS = 2  # segundos — para no pegarle al límite de tasa del 
 def normalizar_texto(txt: str) -> str:
     reemplazos = str.maketrans("áéíóúñ", "aeioun")
     return txt.lower().translate(reemplazos)
+
+
+def limpiar_nombre(texto: str) -> str:
+    """Deja el nombre solo con letras y espacios simples (nada de
+    números ni símbolos sueltos que a veces cuela el OCR), con
+    Mayúscula Inicial en cada palabra."""
+    solo_letras = re.sub(r"[^A-Za-zÁÉÍÓÚÑÜáéíóúñü\s]", "", texto or "")
+    un_espacio = re.sub(r"\s+", " ", solo_letras).strip()
+    return un_espacio.title()
 
 
 def sanear_para_archivo(texto: str) -> str:
@@ -265,7 +274,7 @@ def extraer_de_resultado(result, sedes_conocidas: list):
         if idx_fila == 0:
             continue  # fila de encabezado
         columnas = filas[idx_fila]
-        nombre = columnas.get(col_nombre, "").strip()
+        nombre = limpiar_nombre(columnas.get(col_nombre, ""))
         cedula = re.sub(r"[^\d]", "", columnas.get(col_cedula, ""))
 
         if not nombre and not cedula:

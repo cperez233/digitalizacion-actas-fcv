@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Buscador de Actas — Talento Humano FCV</title>
+<title>Buscador de Actas — Ciberseguridad FCV</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -204,7 +204,7 @@
         <path d="M15 3V7H19" stroke="#1F6F6B" stroke-width="1.6" stroke-linejoin="round"/>
         <path d="M9 12.5H16M9 15.5H16" stroke="#1F6F6B" stroke-width="1.6" stroke-linecap="round"/>
       </svg>
-      <div class="brand-text"><strong>Actas digitalizadas</strong> · Talento Humano</div>
+      <div class="brand-text"><strong>Actas digitalizadas</strong> · Ciberseguridad</div>
     </div>
   </header>
  
@@ -280,8 +280,7 @@
     const filas = filtradas.map(a => `
       <tr>
         <td class="cedula">${a.cedula}</td>
-        <td class="nombre">${a.nombre}${a.revisar ? '<span class="flag-pill">Revisar</span>' : ''}</td>
-        <td class="sede">${a.sede}</td>
+        <td class="nombre">${a.nombre}</td>        <td class="sede">${a.sede}</td>
         <td>
           <div class="acciones">
             <button class="ver-btn" data-archivo="${a.archivo}">Ver PDF</button>

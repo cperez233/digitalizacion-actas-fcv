@@ -1863,14 +1863,14 @@ const ACTAS = [
   },
   {
     "cedula": "1096141971",
-    "nombre": "Daniela Fernando Robles Martinez",
+    "nombre": "Daniela Fernanda Robles Martinez",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_028.pdf",
     "revisar": true
   },
   {
     "cedula": "1007868194",
-    "nombre": "CARLOS ANDRES Villalba CASTRO",
+    "nombre": "Carlos Andres Villalba Castro",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_028.pdf",
     "revisar": true
@@ -1884,20 +1884,20 @@ const ACTAS = [
   },
   {
     "cedula": "1095916635",
-    "nombre": "MARGARETTI RIBERO SILVA",
+    "nombre": "Margareth Ribero Silva",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_028.pdf",
     "revisar": true
   },
   {
     "cedula": "1102722494",
-    "nombre": "Yesra Paola Meja C.",
+    "nombre": "Yesica Paola Mejia C.",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_028.pdf",
     "revisar": true
   },
   {
-    "cedula": "1100399751",
+    "cedula": "1100894751",
     "nombre": "Eder Arnulfo Sánchez V",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_028.pdf",
@@ -1917,23 +1917,25 @@ const ACTAS = [
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_029.pdf",
     "revisar": false
   },
+
   {
     "cedula": "1095951209",
-    "nombre": "Brayan Geralo Herero",
+    "nombre": "Brayan Gerardo Herrera",
+    "sede": "HIC",
+    "archivo": "actas_organizadas/HIC/Scan_0004_pagina_029.pdf",
+    "revisar": true
+  },
+  
+  {
+    "cedula": "1175163267",
+    "nombre": "Stephanie G",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_029.pdf",
     "revisar": true
   },
   {
-    "cedula": "1199161167",
-    "nombre": "Stéphane Galego",
-    "sede": "HIC",
-    "archivo": "actas_organizadas/HIC/Scan_0004_pagina_029.pdf",
-    "revisar": true
-  },
-  {
-    "cedula": "1098922640",
-    "nombre": "Jhon 6 Meza Galvez",
+    "cedula": "1098822640",
+    "nombre": "Jhon G Meza Galvez",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_029.pdf",
     "revisar": true
@@ -1968,14 +1970,14 @@ const ACTAS = [
   },
   {
     "cedula": "1100813274",
-    "nombre": "Jesús Humberto Durín M",
+    "nombre": "Jesús Humberto Durán M",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_029.pdf",
     "revisar": true
   },
   {
     "cedula": "1098645891",
-    "nombre": "ELIKA PAULA JOYA 6.",
+    "nombre": "Erika Paula Joya G.",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_030.pdf",
     "revisar": true
@@ -2002,15 +2004,15 @@ const ACTAS = [
     "revisar": true
   },
   {
-    "cedula": "0634225",
-    "nombre": "Jairo Andrés RíosO",
+    "cedula": "1063142225",
+    "nombre": "Jairo Andrés Ríos O",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_030.pdf",
     "revisar": true
   },
   {
     "cedula": "1003519875",
-    "nombre": "Cristian David Martroz",
+    "nombre": "Cristian David Martinez",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_030.pdf",
     "revisar": true
@@ -2024,14 +2026,14 @@ const ACTAS = [
   },
   {
     "cedula": "1098744659",
-    "nombre": "ANGIE Lizeth Suarez",
+    "nombre": "Angie Lizeth Suarez",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_030.pdf",
     "revisar": false
   },
   {
     "cedula": "1098822478",
-    "nombre": "MARTIN LEONARDO EstupiTAN B",
+    "nombre": "Martin Leonardo Estupiñan B",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_030.pdf",
     "revisar": true
@@ -2052,21 +2054,21 @@ const ACTAS = [
   },
   {
     "cedula": "1095795391",
-    "nombre": "ANDERSON LEMON S.",
+    "nombre": "Anderson Lemon S.",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_031.pdf",
     "revisar": true
   },
   {
     "cedula": "1136882313",
-    "nombre": "Deras Siella Novervio",
+    "nombre": "Deisy Sierra Navarro",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_031.pdf",
     "revisar": true
   },
   {
     "cedula": "1022323240",
-    "nombre": "panie Santiago Jaramillo",
+    "nombre": "Daniel Santiago Jaramillo",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_031.pdf",
     "revisar": true
@@ -2080,28 +2082,28 @@ const ACTAS = [
   },
   {
     "cedula": "1097304258",
-    "nombre": "Evelyn Adnana Forero Pedraza",
+    "nombre": "Evelyn Adriana Forero Pedraza",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_031.pdf",
     "revisar": true
   },
   {
     "cedula": "63452180",
-    "nombre": "Very Rocio Moreno Vilborz",
+    "nombre": "Yeny Rocio Moreno Villabona",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_031.pdf",
     "revisar": true
   },
   {
     "cedula": "1095945237",
-    "nombre": "Bety Carna Parada Acero",
+    "nombre": "Betty Parada Acero",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_031.pdf",
     "revisar": true
   },
   {
-    "cedula": "635541219",
-    "nombre": "Maria Cristina Torres Pama.",
+    "cedula": "63554219",
+    "nombre": "Maria Cristina Torres Parra.",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_031.pdf",
     "revisar": true
@@ -2122,21 +2124,21 @@ const ACTAS = [
   },
   {
     "cedula": "1098734499",
-    "nombre": "JHOSSiMAS GONZALEZ",
+    "nombre": "Jhossimar Gonzalez",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_032.pdf",
     "revisar": true
   },
   {
     "cedula": "1021393604",
-    "nombre": "Leidy stefany Quintero Rueda",
+    "nombre": "Leidy Stefany Quintero Rueda",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_032.pdf",
     "revisar": true
   },
   {
     "cedula": "91539274",
-    "nombre": "GONZALO 6000M LEÓN",
+    "nombre": "Gonzalo León",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_032.pdf",
     "revisar": true
@@ -2157,7 +2159,7 @@ const ACTAS = [
   },
   {
     "cedula": "1096036275",
-    "nombre": "Diego A Becerro (",
+    "nombre": "Diego A Becerro",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_032.pdf",
     "revisar": true
@@ -2171,28 +2173,28 @@ const ACTAS = [
   },
   {
     "cedula": "1005151021",
-    "nombre": "Nadelegan Nuñezlidta",
+    "nombre": "Madeleyna Nuñez",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_032.pdf",
     "revisar": true
   },
   {
-    "cedula": "1107361584",
-    "nombre": "Karolliset Ramirez Florez",
+    "cedula": "1102361584",
+    "nombre": "Karol Liset Ramirez Florez",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_032.pdf",
     "revisar": true
   },
   {
     "cedula": "1005369741",
-    "nombre": "Karol Xiomara Ardild Quintero",
+    "nombre": "Karol Xiomara Ardila Quintero",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_033.pdf",
     "revisar": true
   },
   {
     "cedula": "1095839701",
-    "nombre": "Jesus lopes Manrique",
+    "nombre": "Jesus Lopez Manrique",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_033.pdf",
     "revisar": false
@@ -2220,7 +2222,7 @@ const ACTAS = [
   },
   {
     "cedula": "1098631959",
-    "nombre": "YUR'S marcela mora",
+    "nombre": "Yuris Marcela Mora",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_033.pdf",
     "revisar": true
@@ -2234,21 +2236,21 @@ const ACTAS = [
   },
   {
     "cedula": "1005256861",
-    "nombre": "Angie Tatiana Gutierrez Dazo",
+    "nombre": "Angie Tatiana Gutierrez Daza",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_033.pdf",
     "revisar": true
   },
   {
     "cedula": "1095908296",
-    "nombre": "Carlos Alberto Pineda R.\n:selected:",
+    "nombre": "Carlos Alberto Pineda R",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_033.pdf",
     "revisar": false
   },
   {
     "cedula": "1020560482",
-    "nombre": "IVAN DARIO CHAPARRO PATIÑO",
+    "nombre": "Ivàn Dario Chaparro Patiño",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_033.pdf",
     "revisar": true
@@ -2276,14 +2278,14 @@ const ACTAS = [
   },
   {
     "cedula": "1096062243",
-    "nombre": "Gener Armando Carreño R",
+    "nombre": "Gerner Armando Carreño R",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_034.pdf",
     "revisar": true
   },
   {
     "cedula": "1092337199",
-    "nombre": "Michael camilo Mejia C",
+    "nombre": "Michael Camilo Mejia C",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_034.pdf",
     "revisar": true
@@ -2297,35 +2299,35 @@ const ACTAS = [
   },
   {
     "cedula": "1098409802",
-    "nombre": "Faryol Ribeiro Rivero",
+    "nombre": "Faryd Ribero Rivera",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_034.pdf",
     "revisar": true
   },
   {
     "cedula": "35928875",
-    "nombre": "Mabel Verges Puña",
+    "nombre": "Mabel Vargas Peña",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_034.pdf",
     "revisar": true
   },
   {
-    "cedula": "1193519712",
-    "nombre": "Paula Fernando Romero Gómez",
+    "cedula": "1193519412",
+    "nombre": "Paula Fernanda Romero Gómez",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_034.pdf",
     "revisar": true
   },
   {
     "cedula": "37616546",
-    "nombre": "Ladykatherine DiezP",
+    "nombre": "Lady Katherine Diaz P",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_034.pdf",
     "revisar": true
   },
   {
     "cedula": "1005334676",
-    "nombre": "Moru Isabel Carcedo Salazar",
+    "nombre": "Maria Isabel Caicedo Salazar",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_035.pdf",
     "revisar": true
@@ -2339,7 +2341,7 @@ const ACTAS = [
   },
   {
     "cedula": "1098702687",
-    "nombre": "ErIZ NIÑO ALVAREZ",
+    "nombre": "Eriz Niño Alvarez",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_035.pdf",
     "revisar": true
@@ -2353,14 +2355,14 @@ const ACTAS = [
   },
   {
     "cedula": "1123638926",
-    "nombre": "Andrea PatriciaMárquez",
+    "nombre": "Andrea Patricia Márquez",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_035.pdf",
     "revisar": true
   },
   {
     "cedula": "1005155043",
-    "nombre": "Замthan casenever",
+    "nombre": "Jonathan Casanova",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_035.pdf",
     "revisar": true
@@ -2374,35 +2376,35 @@ const ACTAS = [
   },
   {
     "cedula": "1098704199",
-    "nombre": "Gerson 3har Dra 2 R.",
+    "nombre": "Gerson Jhair Diaz.",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_035.pdf",
     "revisar": true
   },
   {
-    "cedula": "1502379212",
-    "nombre": "Nubia Margarita Vera Cava",
+    "cedula": "1102379212",
+    "nombre": "Nubia Margarita Vera",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_035.pdf",
     "revisar": true
   },
   {
     "cedula": "1102386104",
-    "nombre": "Erika Yarley Prada P",
+    "nombre": "Erika Yurley Prada P",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_035.pdf",
     "revisar": false
   },
   {
     "cedula": "1095793455",
-    "nombre": "Kaval Juliana castañeda correa",
+    "nombre": "Karol Juliana Castañeda Correa",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_036.pdf",
     "revisar": true
   },
   {
     "cedula": "1007438959",
-    "nombre": "Karen Dayana lópezc.",
+    "nombre": "Karen Dayana López.",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_036.pdf",
     "revisar": true
@@ -2423,7 +2425,7 @@ const ACTAS = [
   },
   {
     "cedula": "1098813783",
-    "nombre": "Jonathan Diez Ramírez",
+    "nombre": "Jonathan Diaz Ramírez",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_036.pdf",
     "revisar": true
@@ -2458,35 +2460,35 @@ const ACTAS = [
   },
   {
     "cedula": "1090511861",
-    "nombre": "Diana Carolina Peñac",
+    "nombre": "Diana Carolina Peña",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_036.pdf",
     "revisar": true
   },
   {
     "cedula": "1095943545",
-    "nombre": "Zulay angélica Diaz Claro",
+    "nombre": "Zulay Angélica Diaz Claro",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_037.pdf",
     "revisar": true
   },
   {
     "cedula": "1098643469",
-    "nombre": "Jarlen Jurany Beltran",
+    "nombre": "Yarlen Yurany Beltran",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_037.pdf",
     "revisar": true
   },
   {
     "cedula": "1098805871",
-    "nombre": "Harold Schneider Sanchez Para",
+    "nombre": "Harold Schneider Sanchez",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_037.pdf",
     "revisar": true
   },
   {
     "cedula": "1095807197",
-    "nombre": "Yurley Vargas Ordonet",
+    "nombre": "Yurley Vargas Ordoñez",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_037.pdf",
     "revisar": true
@@ -2500,7 +2502,7 @@ const ACTAS = [
   },
   {
     "cedula": "1008236906",
-    "nombre": "Keist Natal Sierra",
+    "nombre": "Keisy Nataly Sierra",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_037.pdf",
     "revisar": true
@@ -2513,7 +2515,7 @@ const ACTAS = [
     "revisar": true
   },
   {
-    "cedula": "1743141920",
+    "cedula": "1143141920",
     "nombre": "Laura Vanessa Roso Pacheco",
     "sede": "HIC",
     "archivo": "actas_organizadas/HIC/Scan_0004_pagina_037.pdf",
@@ -2598,91 +2600,92 @@ const ACTAS = [
   },
   {
     "cedula": "43902042",
-    "nombre": "Sandre C. Rivera Casus",
+    "nombre": "Sandra C. Rivera Casus",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_001.pdf",
     "revisar": false
   },
+
   {
     "cedula": "1098730055",
     "nombre": "Silvia Daniela lancheros O",
-    "sede": "",
+    "sede": "ICV",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0005_pagina_002.pdf",
     "revisar": true
   },
   {
     "cedula": "1097304224",
     "nombre": "Lidia Said Gelvez C",
-    "sede": "",
+    "sede": "ICV",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0005_pagina_002.pdf",
     "revisar": true
   },
   {
     "cedula": "1095841239",
     "nombre": "Ana María Blandón Z",
-    "sede": "",
+    "sede": "ICV",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0005_pagina_002.pdf",
     "revisar": true
   },
   {
     "cedula": "1095912104",
-    "nombre": "Zharck Vanessa Gomez.",
-    "sede": "",
+    "nombre": "Zharick Vanessa Gomez.",
+    "sede": "ICV",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0005_pagina_002.pdf",
     "revisar": true
   },
   {
     "cedula": "1102369430",
     "nombre": "Andrea Diaz plata",
-    "sede": "",
+    "sede": "ICV",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0005_pagina_002.pdf",
     "revisar": true
   },
   {
-    "cedula": "1698713514",
+    "cedula": "1098713514",
     "nombre": "Wilmer Mauro Castro River",
-    "sede": "",
+    "sede": "ICV",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0005_pagina_002.pdf",
     "revisar": true
   },
   {
     "cedula": "1144155109",
-    "nombre": "Kevin Camillo Gomez",
-    "sede": "",
+    "nombre": "Kevin Carrillo Gomez",
+    "sede": "ICV",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0005_pagina_002.pdf",
     "revisar": true
   },
   {
     "cedula": "37748244",
     "nombre": "Lucelia Perez contreras",
-    "sede": "",
+    "sede": "ICV",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0005_pagina_002.pdf",
     "revisar": true
   },
   {
     "cedula": "1101622879",
     "nombre": "Luisa Fernanda Cordoba Moreno",
-    "sede": "",
+    "sede": "ICV",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0005_pagina_002.pdf",
     "revisar": true
   },
   {
     "cedula": "1098644074",
-    "nombre": "LEIDY Y. ALVAREZ",
-    "sede": "",
+    "nombre": "Leidy Alvarez",
+    "sede": "ICV",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0005_pagina_002.pdf",
     "revisar": true
   },
   {
     "cedula": "1043131275",
-    "nombre": "Michael Fabian Gomez leon",
+    "nombre": "Michael Fabian Gomez Leon",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_003.pdf",
     "revisar": true
   },
   {
     "cedula": "1098638149",
-    "nombre": "Freddy enrique RueduR",
+    "nombre": "Freddy Enrique Rueda",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_003.pdf",
     "revisar": true
@@ -2702,8 +2705,8 @@ const ACTAS = [
     "revisar": true
   },
   {
-    "cedula": "1098879077",
-    "nombre": "Valentina Mantilla Licano",
+    "cedula": "1098819077",
+    "nombre": "Valentina Mantilla Lizcano",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_003.pdf",
     "revisar": true
@@ -2717,14 +2720,14 @@ const ACTAS = [
   },
   {
     "cedula": "1014275269",
-    "nombre": "Maria Fernanda Cargol C",
+    "nombre": "Maria Fernanda Carvajal C",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_003.pdf",
     "revisar": true
   },
   {
-    "cedula": "1007323652",
-    "nombre": "Lara Kanna Book",
+    "cedula": "1007823652",
+    "nombre": "Laura Karina Baox",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_003.pdf",
     "revisar": true
@@ -2744,7 +2747,7 @@ const ACTAS = [
     "revisar": true
   },
   {
-    "cedula": "1095837332",
+    "cedula": "1095837338",
     "nombre": "Maria Stefany Camargo Moreno",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_004.pdf",
@@ -2759,7 +2762,7 @@ const ACTAS = [
   },
   {
     "cedula": "1097096813",
-    "nombre": "Sheryl Lorena Vilamizar V",
+    "nombre": "Sheryll Lorena Vilamizar V",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_004.pdf",
     "revisar": true
@@ -2780,35 +2783,35 @@ const ACTAS = [
   },
   {
     "cedula": "1005372040",
-    "nombre": "Miguel Angel Orma G.",
+    "nombre": "Miguel Angel Osorio G.",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_004.pdf",
     "revisar": true
   },
   {
     "cedula": "1005047968",
-    "nombre": "Jennifer Fonseca Mariño",
+    "nombre": "Jennifer Fonseca Marino",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_004.pdf",
     "revisar": false
   },
   {
     "cedula": "1098726040",
-    "nombre": "Karen 6. Calderón Ariza",
+    "nombre": "Karen G Calderón Ariza",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_004.pdf",
     "revisar": true
   },
   {
     "cedula": "1005298202",
-    "nombre": "Kely Yorley Díaz Parra",
+    "nombre": "Kely Yurley Díaz Parra",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_004.pdf",
     "revisar": true
   },
   {
     "cedula": "1050008103",
-    "nombre": "Valenta M. Ballesteros Carpa",
+    "nombre": "Valeria M. Ballesteros Carpa",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_005.pdf",
     "revisar": true
@@ -2829,20 +2832,20 @@ const ACTAS = [
   },
   {
     "cedula": "1095947438",
-    "nombre": "Karen Juliana Anaga A",
+    "nombre": "Karen Juliana Anaya A",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_005.pdf",
     "revisar": true
   },
   {
     "cedula": "1095907641",
-    "nombre": "Edgar Benicio León Matmez",
+    "nombre": "Edgar Benicio León Martinez",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_005.pdf",
     "revisar": true
   },
   {
-    "cedula": "109877235",
+    "cedula": "1098777235",
     "nombre": "Michell Bautista",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_005.pdf",
@@ -2857,21 +2860,28 @@ const ACTAS = [
   },
   {
     "cedula": "1100969291",
-    "nombre": "Daniela Andrea Reyos Suarez",
+    "nombre": "Daniela Andrea Reyes Suarez",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_005.pdf",
     "revisar": false
   },
   {
     "cedula": "1063623217",
-    "nombre": "Dubin Andrés Rucun Barbory",
+    "nombre": "Dubán Andrés Rincón Barbosa",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_005.pdf",
     "revisar": true
   },
   {
     "cedula": "1095931398",
-    "nombre": "Ma. Paula Alvarez S.",
+    "nombre": "Maria Paula Alvarez S.",
+    "sede": "ICV",
+    "archivo": "actas_organizadas/ICV/Scan_0005_pagina_005.pdf",
+    "revisar": true
+  },
+{
+    "cedula": "1098609103",
+    "nombre": "Yuri Amparo Rivero",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_005.pdf",
     "revisar": true
@@ -2884,8 +2894,8 @@ const ACTAS = [
     "revisar": false
   },
   {
-    "cedula": "109782312",
-    "nombre": "Sara Valentina Castil Almada",
+    "cedula": "1097782312",
+    "nombre": "Sara Valentina Castillo Almeida",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_006.pdf",
     "revisar": true
@@ -2898,15 +2908,15 @@ const ACTAS = [
     "revisar": false
   },
   {
-    "cedula": "098726643",
-    "nombre": "Jessra Stefania Ojeda",
+    "cedula": "1098726643",
+    "nombre": "Jessica Stefania Ojeda",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_007.pdf",
     "revisar": true
   },
   {
     "cedula": "1007305619",
-    "nombre": "Derby Yesid Martinez M",
+    "nombre": "Deiby Yesid Martinez M",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_007.pdf",
     "revisar": true
@@ -2920,7 +2930,7 @@ const ACTAS = [
   },
   {
     "cedula": "1095839843",
-    "nombre": "Steven Andres Gomez silva",
+    "nombre": "Steven Andres Gomez Silva",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_007.pdf",
     "revisar": true
@@ -2934,7 +2944,7 @@ const ACTAS = [
   },
   {
     "cedula": "1002242485",
-    "nombre": "Luis fernando Primera",
+    "nombre": "Luis Fernando Primera",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_007.pdf",
     "revisar": false
@@ -2947,86 +2957,86 @@ const ACTAS = [
     "revisar": true
   },
   {
-    "cedula": "1091657468",
-    "nombre": "Ingrid Noguera Aris",
+    "cedula": "1091357468",
+    "nombre": "Ingrid Noguera Arias",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_007.pdf",
     "revisar": true
   },
   {
     "cedula": "1005328028",
-    "nombre": "MARÍA ViMETTI RIVERA",
+    "nombre": "María Yineth Rivera",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_007.pdf",
     "revisar": true
   },
   {
     "cedula": "1094167676",
-    "nombre": "Rub. Dayana Alexcon Santana",
-    "sede": "",
+    "nombre": "Rubi Dayana Alarcon Santana",
+    "sede": "ICV",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0005_pagina_008.pdf",
     "revisar": true
   },
   {
     "cedula": "1003623849",
-    "nombre": "Fabian Moren fico",
-    "sede": "",
+    "nombre": "Fabian Moreno Rico",
+    "sede": "ICV",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0005_pagina_008.pdf",
     "revisar": true
   },
   {
     "cedula": "1098637400",
-    "nombre": "SWDY RIVERA A",
-    "sede": "",
+    "nombre": "Sindy Rivera A",
+    "sede": "ICV",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0005_pagina_008.pdf",
     "revisar": true
   },
   {
-    "cedula": "119339109",
-    "nombre": "Valentina Pulido Para",
-    "sede": "",
+    "cedula": "1193391099",
+    "nombre": "Valentina Pulido Parra",
+    "sede": "ICV",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0005_pagina_008.pdf",
     "revisar": true
   },
   {
     "cedula": "1030067872",
     "nombre": "Ana Maria Sampayo",
-    "sede": "",
+    "sede": "ICV",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0005_pagina_008.pdf",
     "revisar": true
   },
   {
     "cedula": "1007193115",
     "nombre": "Maira Alejandra Guerrero",
-    "sede": "",
+    "sede": "ICV",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0005_pagina_008.pdf",
     "revisar": true
   },
   {
     "cedula": "1102330927",
     "nombre": "Tatiana Linares",
-    "sede": "",
+    "sede": "ICV",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0005_pagina_008.pdf",
     "revisar": true
   },
   {
     "cedula": "1232888389",
     "nombre": "Angie Paola Morales S",
-    "sede": "",
+    "sede": "ICV",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0005_pagina_008.pdf",
     "revisar": true
   },
   {
     "cedula": "1053819668",
-    "nombre": "Oscar. Ocampo Hanno",
-    "sede": "",
+    "nombre": "Oscar Ocampo Henao",
+    "sede": "ICV",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0005_pagina_008.pdf",
     "revisar": true
   },
   {
     "cedula": "1095957955",
     "nombre": "Nicolas Ramirez C",
-    "sede": "",
+    "sede": "ICV",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0005_pagina_008.pdf",
     "revisar": true
   },
@@ -3039,21 +3049,21 @@ const ACTAS = [
   },
   {
     "cedula": "1192913044",
-    "nombre": "Leicy Fernanda Correa 3",
+    "nombre": "Leicy Fernanda Correa",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_009.pdf",
     "revisar": true
   },
   {
-    "cedula": "2000018033",
-    "nombre": "MARÍA FINANCEIRA G",
+    "cedula": "0000018033",
+    "nombre": "María F Mancera G",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_009.pdf",
     "revisar": true
   },
   {
     "cedula": "1115182424",
-    "nombre": "Alexandra Tabores Boter :selected:",
+    "nombre": "Alexandra Tabores Botero",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_009.pdf",
     "revisar": true
@@ -3103,70 +3113,70 @@ const ACTAS = [
   {
     "cedula": "1098603600",
     "nombre": "VLADIMIR LUNA SANTOS",
-    "sede": "",
+    "sede": "ICV",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0005_pagina_010.pdf",
     "revisar": true
   },
   {
     "cedula": "1093748845",
-    "nombre": "Pamela OAega",
-    "sede": "",
+    "nombre": "Pamela Ortega",
+    "sede": "ICV",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0005_pagina_010.pdf",
     "revisar": true
   },
   {
     "cedula": "1099553615",
     "nombre": "Bredier Cano Cruz",
-    "sede": "",
+    "sede": "ICV",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0005_pagina_010.pdf",
     "revisar": true
   },
   {
     "cedula": "1110519542",
-    "nombre": "LeidyCarling VascoJ.",
-    "sede": "",
+    "nombre": "Leidy Carolina Vasco J.",
+    "sede": "ICV",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0005_pagina_010.pdf",
     "revisar": true
   },
   {
     "cedula": "1096234198",
-    "nombre": "Daniel Felipe Colis Man",
-    "sede": "",
+    "nombre": "Daniel Felipe Castro",
+    "sede": "ICV",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0005_pagina_010.pdf",
     "revisar": true
   },
   {
     "cedula": "1098751119",
-    "nombre": "Andrea Ramirez 6",
-    "sede": "",
+    "nombre": "Andrea Ramirez G",
+    "sede": "ICV",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0005_pagina_010.pdf",
     "revisar": true
   },
   {
     "cedula": "1007775745",
-    "nombre": "César Alejandro Ortizs.",
-    "sede": "",
+    "nombre": "César Alejandro Ortiz.",
+    "sede": "ICV",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0005_pagina_010.pdf",
     "revisar": true
   },
   {
-    "cedula": "1099814204",
+    "cedula": "1098814204",
     "nombre": "Jennifer Nathalia Ayala",
-    "sede": "",
+    "sede": "ICV",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0005_pagina_010.pdf",
     "revisar": true
   },
   {
-    "cedula": "1193723187",
+    "cedula": "1193123187",
     "nombre": "Diego Gutierrez",
-    "sede": "",
+    "sede": "ICV",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0005_pagina_010.pdf",
     "revisar": true
   },
   {
     "cedula": "1193530986",
-    "nombre": "TheFer Your Mera",
-    "sede": "",
+    "nombre": "Jhefer Yair Mejia",
+    "sede": "ICV",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0005_pagina_010.pdf",
     "revisar": true
   },
@@ -3192,8 +3202,8 @@ const ACTAS = [
     "revisar": true
   },
   {
-    "cedula": "095455973",
-    "nombre": "Sergio Armando Joins",
+    "cedula": "1095955973",
+    "nombre": "Sergio Armando Jaimes",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_011.pdf",
     "revisar": true
@@ -3206,7 +3216,7 @@ const ACTAS = [
     "revisar": false
   },
   {
-    "cedula": "100634219",
+    "cedula": "1006344219",
     "nombre": "Angie Tatiana Cadena R",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_011.pdf",
@@ -3214,27 +3224,27 @@ const ACTAS = [
   },
   {
     "cedula": "1098788301",
-    "nombre": "KORONTaRaZONa Gelve 2",
+    "nombre": "Karen Tarazone Gelvez",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_011.pdf",
     "revisar": true
   },
   {
     "cedula": "98339312",
-    "nombre": "David Ramiro Madroñero Muñiz",
+    "nombre": "David Ramiro Madroñero Muñoz",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_011.pdf",
     "revisar": true
   },
   {
-    "cedula": "1090814754",
+    "cedula": "1098814754",
     "nombre": "Silvia José Maldonado N.",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_011.pdf",
     "revisar": true
   },
   {
-    "cedula": "83175120",
+    "cedula": "83175128",
     "nombre": "Choiceen",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_011.pdf",
@@ -3263,7 +3273,7 @@ const ACTAS = [
   },
   {
     "cedula": "1098786405",
-    "nombre": "Juan Carlos Osma Para",
+    "nombre": "Juan Carlos Osorio Parra",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_012.pdf",
     "revisar": true
@@ -3277,42 +3287,42 @@ const ACTAS = [
   },
   {
     "cedula": "1102391627",
-    "nombre": "Gery M. Silva Campo",
+    "nombre": "Geidy M. Silva Campo",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_012.pdf",
     "revisar": true
   },
   {
     "cedula": "1001217769",
-    "nombre": "Andres camilo Rolda",
+    "nombre": "Andres Camilo Roldan",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_012.pdf",
     "revisar": true
   },
   {
     "cedula": "1090486035",
-    "nombre": "Anglee Jaqueline Peña Gonzalez",
+    "nombre": "Angie Jaqueline Peña Gonzalez",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_012.pdf",
     "revisar": true
   },
   {
-    "cedula": "1058038928",
-    "nombre": "Ediment Mauricio Gil 6",
+    "cedula": "1058038828",
+    "nombre": "Edimar Mauricio Gil G",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_012.pdf",
     "revisar": true
   },
   {
     "cedula": "1098765646",
-    "nombre": "Marlon Jesus Loun.",
+    "nombre": "Marlon Jesus Lozano.",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_012.pdf",
     "revisar": true
   },
   {
     "cedula": "1233345100",
-    "nombre": "Jaime Alberto Cadavid Avica",
+    "nombre": "Jaime Alberto Avila",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_013.pdf",
     "revisar": true
@@ -3333,14 +3343,14 @@ const ACTAS = [
   },
   {
     "cedula": "1098809934",
-    "nombre": "MariaAlejandra Dran Caba",
+    "nombre": "Maria Alejandra Durán",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_013.pdf",
     "revisar": true
   },
   {
     "cedula": "1032392472",
-    "nombre": "Carmen Yonel Malagón Cotellanos",
+    "nombre": "Carmen Yonel Malagón Castellanos",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_013.pdf",
     "revisar": true
@@ -3368,14 +3378,14 @@ const ACTAS = [
   },
   {
     "cedula": "37745470",
-    "nombre": "Amparo Marno Olarte",
+    "nombre": "Amparo Moreno Olarte",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_013.pdf",
     "revisar": true
   },
   {
     "cedula": "1098756498",
-    "nombre": "Mayerly livein HerreraR",
+    "nombre": "Mayerly Lizeth Herrera R",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_013.pdf",
     "revisar": true
@@ -3389,7 +3399,7 @@ const ACTAS = [
   },
   {
     "cedula": "1005370862",
-    "nombre": "JenyFfer Taliana Moreno M",
+    "nombre": "Jenyffer Tatiana Moreno M",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_014.pdf",
     "revisar": true
@@ -3410,7 +3420,7 @@ const ACTAS = [
   },
   {
     "cedula": "1098072361",
-    "nombre": "Julieth Paola Garcia Suarez",
+    "nombre": "Yulieth Paola Garcia Suarez",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_014.pdf",
     "revisar": true
@@ -3424,14 +3434,14 @@ const ACTAS = [
   },
   {
     "cedula": "1098808516",
-    "nombre": "Matra Alejandra Garcia logas",
+    "nombre": "Mayra Alejandra Garcia Rojas",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_014.pdf",
     "revisar": true
   },
   {
-    "cedula": "2605905001",
-    "nombre": "Yolimar Cabarico Velande",
+    "cedula": "1005065072",
+    "nombre": "Yolimar Cabarico Velandia",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_014.pdf",
     "revisar": true
@@ -3451,22 +3461,22 @@ const ACTAS = [
     "revisar": true
   },
   {
-    "cedula": "915",
-    "nombre": "Diego Humberto Márquez",
+    "cedula": "915313398",
+    "nombre": "Diego Humberto Márquez Bohorquez",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_015.pdf",
     "revisar": true
   },
   {
     "cedula": "1193527516",
-    "nombre": "Yarisefh Arciniegas P.",
+    "nombre": "Yariseth Arciniegas P.",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_015.pdf",
     "revisar": true
   },
   {
-    "cedula": "109877448",
-    "nombre": "Esther Rojas Canção",
+    "cedula": "1098717448",
+    "nombre": "Esther Rojas Cancelo",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_015.pdf",
     "revisar": true
@@ -3480,14 +3490,14 @@ const ACTAS = [
   },
   {
     "cedula": "1097282058",
-    "nombre": "Sharry Lorena Cuervo M.",
+    "nombre": "Shayra Lorena Cuervo M.",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_016.pdf",
     "revisar": true
   },
   {
     "cedula": "63366824",
-    "nombre": "alanolio labora Gamboa",
+    "nombre": "Claudio Cabeza Gamboa",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_016.pdf",
     "revisar": true
@@ -3507,14 +3517,14 @@ const ACTAS = [
     "revisar": false
   },
   {
-    "cedula": "37620190",
-    "nombre": "Pada Alevada Della Muño",
+    "cedula": "37620298",
+    "nombre": "Paola Alexandra Muño",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_016.pdf",
     "revisar": true
   },
   {
-    "cedula": "4102370895",
+    "cedula": "1102870895",
     "nombre": "Yaneth Lopez Lozano",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_016.pdf",
@@ -3522,21 +3532,21 @@ const ACTAS = [
   },
   {
     "cedula": "1097302323",
-    "nombre": "AngyLizethBautista",
+    "nombre": "Angy Lizeth Bautista",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_016.pdf",
     "revisar": true
   },
   {
     "cedula": "1098721328",
-    "nombre": "Alejandra Moreno Franc",
+    "nombre": "Alejandra Moreno Franco",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_016.pdf",
     "revisar": true
   },
   {
     "cedula": "1095841272",
-    "nombre": "Juan Daniel Ojeda Diter.",
+    "nombre": "Juan Daniel Ojeda Ortiz.",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_016.pdf",
     "revisar": true
@@ -3557,28 +3567,28 @@ const ACTAS = [
   },
   {
     "cedula": "1098725065",
-    "nombre": "LifeTH Carolina Mendez C.",
+    "nombre": "Lizeth Carolina Mendez C.",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_017.pdf",
     "revisar": true
   },
   {
     "cedula": "1098821238",
-    "nombre": "Cristian Andres Jerez Ruedo",
+    "nombre": "Cristian Andres Jerez Rueda",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_017.pdf",
     "revisar": true
   },
   {
-    "cedula": "1008078894",
-    "nombre": "Anglo Paola Villamizar C.",
+    "cedula": "1005078594",
+    "nombre": "Angie Paola Villamizar C.",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_017.pdf",
     "revisar": true
   },
   {
     "cedula": "79690914",
-    "nombre": "Oscar Mauricio Morno Ojeda",
+    "nombre": "Oscar Mauricio Moreno Ojeda",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_017.pdf",
     "revisar": true
@@ -3592,7 +3602,7 @@ const ACTAS = [
   },
   {
     "cedula": "1102479277",
-    "nombre": "Bizidy Johana Zmiz",
+    "nombre": "Breidy Johanna",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_017.pdf",
     "revisar": true
@@ -3605,15 +3615,15 @@ const ACTAS = [
     "revisar": true
   },
   {
-    "cedula": "11025499",
-    "nombre": "Ivan Andro Citrinos",
+    "cedula": "1102549961",
+    "nombre": "Ivan Andres Libreros",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_017.pdf",
     "revisar": true
   },
   {
     "cedula": "1193239871",
-    "nombre": "Jairr steeven Perea",
+    "nombre": "Jairr Steeven Perea",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_018.pdf",
     "revisar": false
@@ -3640,14 +3650,14 @@ const ACTAS = [
     "revisar": true
   },
   {
-    "cedula": "1099806693",
-    "nombre": "Stevy Sánchez QueReRc",
+    "cedula": "1098806693",
+    "nombre": "Steisy Sánchez Guerrero",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_018.pdf",
     "revisar": true
   },
   {
-    "cedula": "11005454331",
+    "cedula": "1005454331",
     "nombre": "SMITH GARCÍA PATIÑO",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_018.pdf",
@@ -3662,13 +3672,13 @@ const ACTAS = [
   },
   {
     "cedula": "1005340065",
-    "nombre": "Matery tatiana James",
+    "nombre": "Nayely Tatiana Jaimes",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_018.pdf",
     "revisar": true
   },
   {
-    "cedula": "4143225356",
+    "cedula": "1143225356",
     "nombre": "Amanda Miguel Ferrer Diaz",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_018.pdf",
@@ -3676,98 +3686,98 @@ const ACTAS = [
   },
   {
     "cedula": "1095701872",
-    "nombre": "Yeison Ronaldo Ortiz Aceve",
+    "nombre": "Yeison Ronaldo Ortiz Acevedo",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_018.pdf",
     "revisar": true
   },
   {
     "cedula": "1041690152",
-    "nombre": "StheFANY Bustillo",
-    "sede": "",
+    "nombre": "Sthefany Bustillo",
+    "sede": "ICV",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0005_pagina_019.pdf",
     "revisar": true
   },
   {
     "cedula": "1095301187",
-    "nombre": "Stefany Youlieth Vargas",
-    "sede": "",
+    "nombre": "Stefany Yulieth Vargas",
+    "sede": "ICV",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0005_pagina_019.pdf",
     "revisar": true
   },
   {
     "cedula": "1095814732",
     "nombre": "Jessica Paola Camacho",
-    "sede": "",
+    "sede": "ICV",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0005_pagina_019.pdf",
     "revisar": true
   },
   {
     "cedula": "1005151750",
-    "nombre": "Marily vanessa Rangel R.",
-    "sede": "",
+    "nombre": "Marily Vanessa Rangel R.",
+    "sede": "ICV",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0005_pagina_019.pdf",
     "revisar": true
   },
   {
     "cedula": "63541293",
-    "nombre": "Laura Viviana Crispin Rueda",
-    "sede": "",
+    "nombre": "Laura Viviana Rueda",
+    "sede": "ICV",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0005_pagina_019.pdf",
     "revisar": true
   },
   {
     "cedula": "1095807842",
     "nombre": "Ana Milena Cardenas",
-    "sede": "",
+    "sede": "ICV",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0005_pagina_019.pdf",
     "revisar": true
   },
   {
     "cedula": "1094277671",
     "nombre": "Karla Yulieth Duarte Mantilla",
-    "sede": "",
+    "sede": "ICV",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0005_pagina_019.pdf",
     "revisar": true
   },
   {
     "cedula": "1098682421",
     "nombre": "JONATHAN RODRIGUEZ BRANO",
-    "sede": "",
+    "sede": "ICV",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0005_pagina_019.pdf",
     "revisar": true
   },
   {
     "cedula": "1098724633",
     "nombre": "Paola Andrea Diaz Vega",
-    "sede": "",
+    "sede": "ICV",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0005_pagina_019.pdf",
     "revisar": true
   },
   {
     "cedula": "1005190268",
-    "nombre": "Carlos Andrey Scand Flare",
-    "sede": "",
+    "nombre": "Carlos Andrey Suarez Florez",
+    "sede": "ICV",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0005_pagina_019.pdf",
     "revisar": true
   },
   {
     "cedula": "1090519146",
-    "nombre": "Fabio Andrés Towar Villanizar",
+    "nombre": "Fabio Andrés Torres Villanizar",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_020.pdf",
     "revisar": true
   },
   {
     "cedula": "1090179216",
-    "nombre": "José Reinaldo Garcia Ción",
+    "nombre": "José Reinaldo Garcia León",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_020.pdf",
     "revisar": true
   },
   {
     "cedula": "1098697849",
-    "nombre": "Jennifer Pada Amador",
+    "nombre": "Jennifer Paola Amador",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_020.pdf",
     "revisar": true
@@ -3781,14 +3791,14 @@ const ACTAS = [
   },
   {
     "cedula": "1098809563",
-    "nombre": "Maria Paula Jones Pedraza",
+    "nombre": "Maria Paula Jaimes Pedraza",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_020.pdf",
     "revisar": true
   },
   {
-    "cedula": "1098764976",
-    "nombre": "Santiago A.Gelez",
+    "cedula": "1098764979",
+    "nombre": "Santiago A.Gelvez",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_020.pdf",
     "revisar": true
@@ -3816,7 +3826,7 @@ const ACTAS = [
   },
   {
     "cedula": "37746131",
-    "nombre": "Publela Rodriquez",
+    "nombre": "Rubiela Rodriquez",
     "sede": "ICV",
     "archivo": "actas_organizadas/ICV/Scan_0005_pagina_020.pdf",
     "revisar": true
@@ -3830,13 +3840,13 @@ const ACTAS = [
   },
   {
     "cedula": "1098810431",
-    "nombre": "Maria Pavia Rueda Prada",
+    "nombre": "Maria Paula Rueda Prada",
     "sede": "CTE",
     "archivo": "actas_organizadas/CTE/Scan_0006_pagina_001.pdf",
     "revisar": true
   },
   {
-    "cedula": "1001240537",
+    "cedula": "1005240517",
     "nombre": "Yuliana Andrea Gómez",
     "sede": "CTE",
     "archivo": "actas_organizadas/CTE/Scan_0006_pagina_001.pdf",
@@ -3844,7 +3854,7 @@ const ACTAS = [
   },
   {
     "cedula": "1019603193",
-    "nombre": "Karen Osano Gomez",
+    "nombre": "Karen Osorio Gomez",
     "sede": "CTE",
     "archivo": "actas_organizadas/CTE/Scan_0006_pagina_001.pdf",
     "revisar": true
@@ -3858,14 +3868,14 @@ const ACTAS = [
   },
   {
     "cedula": "1007775657",
-    "nombre": "Andres Fabian Rueda 6",
+    "nombre": "Andres Fabian Rueda G",
     "sede": "CTE",
     "archivo": "actas_organizadas/CTE/Scan_0006_pagina_001.pdf",
     "revisar": true
   },
   {
     "cedula": "1095828637",
-    "nombre": "Sirley tatiana Rodeger",
+    "nombre": "Sirley Tatiana Rodriguez",
     "sede": "CTE",
     "archivo": "actas_organizadas/CTE/Scan_0006_pagina_001.pdf",
     "revisar": true
@@ -3886,35 +3896,35 @@ const ACTAS = [
   },
   {
     "cedula": "1102378618",
-    "nombre": "Yessica Tatiana Duranleón",
+    "nombre": "Yessica Tatiana Duran León",
     "sede": "CTE",
     "archivo": "actas_organizadas/CTE/Scan_0006_pagina_003.pdf",
     "revisar": true
   },
   {
     "cedula": "60267457",
-    "nombre": "Claudia Liset Fernandez 14",
+    "nombre": "Claudia Liset Fernandez M",
     "sede": "CTE",
     "archivo": "actas_organizadas/CTE/Scan_0006_pagina_003.pdf",
     "revisar": true
   },
   {
     "cedula": "63493893",
-    "nombre": "MARIA EUGENIA GUTIERREZ",
+    "nombre": "Maria Eugenia Gutierrez",
     "sede": "CTE",
     "archivo": "actas_organizadas/CTE/Scan_0006_pagina_003.pdf",
     "revisar": false
   },
   {
     "cedula": "1007900776",
-    "nombre": "Sharon Yineth Ryau Toroza",
+    "nombre": "Sharon Yineth Rojas Toloza",
     "sede": "CTE",
     "archivo": "actas_organizadas/CTE/Scan_0006_pagina_003.pdf",
     "revisar": true
   },
   {
     "cedula": "1098760623",
-    "nombre": "Katherin Quintero C",
+    "nombre": "Katheryn Quintero C",
     "sede": "CTE",
     "archivo": "actas_organizadas/CTE/Scan_0006_pagina_003.pdf",
     "revisar": true
@@ -3934,85 +3944,85 @@ const ACTAS = [
     "revisar": false
   },
   {
-    "cedula": "109880702",
-    "nombre": "Jose miguel unsure Rois",
+    "cedula": "1098807702",
+    "nombre": "Jose Miguel Ruiz",
     "sede": "CTE",
     "archivo": "actas_organizadas/CTE/Scan_0006_pagina_003.pdf",
     "revisar": true
   },
   {
-    "cedula": "700562600",
-    "nombre": "(02 Aminta luna santos",
-    "sede": "",
+    "cedula": "1005162600",
+    "nombre": "Luz Aminta Luna Santos",
+    "sede": "CTE",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0006_pagina_004.pdf",
     "revisar": true
   },
   {
     "cedula": "1102383198",
     "nombre": "Claudia Juliana Rey Jaimes",
-    "sede": "",
+    "sede": "CTE",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0006_pagina_004.pdf",
     "revisar": true
   },
   {
     "cedula": "1095950418",
     "nombre": "Brayan Stivel Quiroga",
-    "sede": "",
+    "sede": "CTE",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0006_pagina_004.pdf",
     "revisar": true
   },
   {
     "cedula": "1095793712",
     "nombre": "Yesica Buitrago B.",
-    "sede": "",
+    "sede": "CTE",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0006_pagina_004.pdf",
     "revisar": true
   },
   {
     "cedula": "1093748993",
-    "nombre": "Lady Denens Rincon",
-    "sede": "",
+    "nombre": "Leidy Deneris Rincon",
+    "sede": "CTE",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0006_pagina_004.pdf",
     "revisar": true
   },
   {
-    "cedula": "1004991917",
+    "cedula": "1004991912",
     "nombre": "Diana Carolina C.",
-    "sede": "",
+    "sede": "CTE",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0006_pagina_004.pdf",
     "revisar": true
   },
   {
     "cedula": "1095922333",
     "nombre": "Natalia Nuñez P.",
-    "sede": "",
+    "sede": "CTE",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0006_pagina_004.pdf",
     "revisar": true
   },
   {
     "cedula": "1005323301",
     "nombre": "Santiago Garnica Zambrano",
-    "sede": "",
+    "sede": "CTE",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0006_pagina_004.pdf",
     "revisar": true
   },
   {
     "cedula": "1098729628",
     "nombre": "Maria Monica Torres Alarcón",
-    "sede": "",
+    "sede": "CTE",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0006_pagina_004.pdf",
     "revisar": true
   },
   {
     "cedula": "1095811394",
-    "nombre": "Juliana Paola Gámez",
-    "sede": "",
+    "nombre": "Juliana Paola Gómez",
+    "sede": "CTE",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0006_pagina_004.pdf",
     "revisar": true
   },
   {
     "cedula": "1005289157",
-    "nombre": "Luis Inesto dames Pedue",
+    "nombre": "Luis Ernesto Jaimes Pedraza",
     "sede": "MA",
     "archivo": "actas_organizadas/MA/Scan_0007_pagina_001.pdf",
     "revisar": true
@@ -4026,35 +4036,35 @@ const ACTAS = [
   },
   {
     "cedula": "1098803598",
-    "nombre": "JuliethPada celis piaz",
+    "nombre": "Julieth Paola Celis Diaz",
     "sede": "MA",
     "archivo": "actas_organizadas/MA/Scan_0007_pagina_001.pdf",
     "revisar": true
   },
   {
-    "cedula": "1099003277",
-    "nombre": "Maria ORTEGA Garcia",
+    "cedula": "1097093277",
+    "nombre": "Maria Ortega Garcia",
     "sede": "MA",
     "archivo": "actas_organizadas/MA/Scan_0007_pagina_001.pdf",
     "revisar": true
   },
   {
     "cedula": "1102377440",
-    "nombre": "Jhonatan Gómez Garde",
+    "nombre": "Jhonatan Gómez Garcia",
     "sede": "MA",
     "archivo": "actas_organizadas/MA/Scan_0007_pagina_001.pdf",
     "revisar": true
   },
   {
     "cedula": "1100893549",
-    "nombre": "Ingri carolina Averos",
+    "nombre": "Ingri Carolina Averos",
     "sede": "MA",
     "archivo": "actas_organizadas/MA/Scan_0007_pagina_002.pdf",
     "revisar": true
   },
   {
     "cedula": "1019060682",
-    "nombre": "Ivan Ranacalvo",
+    "nombre": "Ivan Bonacalvo",
     "sede": "MA",
     "archivo": "actas_organizadas/MA/Scan_0007_pagina_002.pdf",
     "revisar": true
@@ -4082,7 +4092,7 @@ const ACTAS = [
   },
   {
     "cedula": "1005053465",
-    "nombre": "gisell Angelica Gutierrez",
+    "nombre": "Gisell Angelica Gutierrez",
     "sede": "MA",
     "archivo": "actas_organizadas/MA/Scan_0007_pagina_002.pdf",
     "revisar": true
@@ -4096,14 +4106,14 @@ const ACTAS = [
   },
   {
     "cedula": "1004822428",
-    "nombre": "ADA Briccida Rosrisco",
+    "nombre": "Ana Rodriguez",
     "sede": "MA",
     "archivo": "actas_organizadas/MA/Scan_0007_pagina_002.pdf",
     "revisar": true
   },
   {
     "cedula": "1095909042",
-    "nombre": "Rocio Mantilla Gutierre 2",
+    "nombre": "Rocio Mantilla Gutierrez",
     "sede": "MA",
     "archivo": "actas_organizadas/MA/Scan_0007_pagina_002.pdf",
     "revisar": false
@@ -4117,21 +4127,21 @@ const ACTAS = [
   },
   {
     "cedula": "1102374550",
-    "nombre": "Yeimy Katherine Malogin",
-    "sede": "",
+    "nombre": "Yeimy Katherine Malagón",
+    "sede": "MA",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0007_pagina_003.pdf",
     "revisar": true
   },
   {
     "cedula": "1005238401",
     "nombre": "Jenni Marcela Marin",
-    "sede": "",
+    "sede": "MA",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0007_pagina_003.pdf",
     "revisar": true
   },
   {
     "cedula": "22820352",
-    "nombre": "MARÍA SOLEDAD COSSÃO",
+    "nombre": "María Soledad Cossio",
     "sede": "MA",
     "archivo": "actas_organizadas/MA/Scan_0007_pagina_004.pdf",
     "revisar": true
@@ -4158,22 +4168,22 @@ const ACTAS = [
     "revisar": false
   },
   {
-    "cedula": "1095790389",
-    "nombre": "Lilia Ines rincon amaya",
+    "cedula": "1095740389",
+    "nombre": "Lilia Ines Rincon Amaya",
     "sede": "MA",
     "archivo": "actas_organizadas/MA/Scan_0007_pagina_004.pdf",
     "revisar": true
   },
   {
     "cedula": "1050068103",
-    "nombre": "Valent Ballesteros campa",
+    "nombre": "Valeria Ballesteros Cerpa",
     "sede": "MA",
     "archivo": "actas_organizadas/MA/Scan_0007_pagina_004.pdf",
     "revisar": true
   },
   {
     "cedula": "1098753267",
-    "nombre": "Carla Garadoj Olma",
+    "nombre": "Paula Granados",
     "sede": "MA",
     "archivo": "actas_organizadas/MA/Scan_0007_pagina_004.pdf",
     "revisar": true
@@ -4187,21 +4197,21 @@ const ACTAS = [
   },
   {
     "cedula": "371544895",
-    "nombre": "Johannatorso pm",
+    "nombre": "Johanna Forero",
     "sede": "MA",
     "archivo": "actas_organizadas/MA/Scan_0007_pagina_004.pdf",
     "revisar": true
   },
   {
     "cedula": "37616255",
-    "nombre": "Karen JulietIn",
+    "nombre": "Karen Julieth",
     "sede": "MA",
     "archivo": "actas_organizadas/MA/Scan_0007_pagina_004.pdf",
     "revisar": true
   },
   {
     "cedula": "1095910077",
-    "nombre": "4014 Rincon Plata",
+    "nombre": "Yuly Rincon Plata",
     "sede": "MA",
     "archivo": "actas_organizadas/MA/Scan_0007_pagina_005.pdf",
     "revisar": true
@@ -4215,7 +4225,7 @@ const ACTAS = [
   },
   {
     "cedula": "1098604404",
-    "nombre": "Yerly Johana Serra S.",
+    "nombre": "Yerly Johana Serna S.",
     "sede": "MA",
     "archivo": "actas_organizadas/MA/Scan_0007_pagina_005.pdf",
     "revisar": false
@@ -4249,15 +4259,15 @@ const ACTAS = [
     "revisar": true
   },
   {
-    "cedula": "9098794751",
-    "nombre": "Yor y tatiana Peña J.",
+    "cedula": "1098794751",
+    "nombre": "Yury tatiana Peña J.",
     "sede": "MA",
     "archivo": "actas_organizadas/MA/Scan_0007_pagina_005.pdf",
     "revisar": false
   },
   {
     "cedula": "1102386972",
-    "nombre": "Paola andrea Poveda",
+    "nombre": "Paola Andrea Poveda",
     "sede": "MA",
     "archivo": "actas_organizadas/MA/Scan_0007_pagina_005.pdf",
     "revisar": true
@@ -4285,7 +4295,7 @@ const ACTAS = [
   },
   {
     "cedula": "63472164",
-    "nombre": "Nazlyttylena MartinaPer",
+    "nombre": "Nazly Martinez Perez",
     "sede": "MA",
     "archivo": "actas_organizadas/MA/Scan_0007_pagina_006.pdf",
     "revisar": true
@@ -4298,15 +4308,15 @@ const ACTAS = [
     "revisar": false
   },
   {
-    "cedula": "1065597679",
-    "nombre": "Pauletifatiana Suarez",
+    "cedula": "1065597079",
+    "nombre": "Pauleth Tatiana Suarez",
     "sede": "MA",
     "archivo": "actas_organizadas/MA/Scan_0007_pagina_006.pdf",
     "revisar": true
   },
   {
     "cedula": "1005475197",
-    "nombre": "David Fixo Fuertes",
+    "nombre": "David Fuentes",
     "sede": "MA",
     "archivo": "actas_organizadas/MA/Scan_0007_pagina_006.pdf",
     "revisar": true
@@ -4327,7 +4337,7 @@ const ACTAS = [
   },
   {
     "cedula": "63559757",
-    "nombre": "Liliana Rodrigues 4.",
+    "nombre": "Liliana Rodriguez M.",
     "sede": "MA",
     "archivo": "actas_organizadas/MA/Scan_0007_pagina_006.pdf",
     "revisar": true
@@ -4354,7 +4364,7 @@ const ACTAS = [
     "revisar": true
   },
   {
-    "cedula": "1007199543",
+    "cedula": "1007189543",
     "nombre": "Luz Adriana Peréz",
     "sede": "MA",
     "archivo": "actas_organizadas/MA/Scan_0007_pagina_007.pdf",
@@ -4403,8 +4413,8 @@ const ACTAS = [
     "revisar": true
   },
   {
-    "cedula": "7005525734",
-    "nombre": "Diana Paola torres",
+    "cedula": "1005325734",
+    "nombre": "Diana Paola Torres",
     "sede": "MA",
     "archivo": "actas_organizadas/MA/Scan_0007_pagina_007.pdf",
     "revisar": false
@@ -4424,43 +4434,43 @@ const ACTAS = [
     "revisar": true
   },
   {
-    "cedula": "109869805",
-    "nombre": "MOMOA CAMACHO RIME",
+    "cedula": "1098698057",
+    "nombre": "Momoa Camacho",
     "sede": "IMAP",
     "archivo": "actas_organizadas/IMAP/Scan_0008_pagina_001.pdf",
     "revisar": true
   },
   {
     "cedula": "1005290596",
-    "nombre": "Karen Wired Dict Carrillo",
+    "nombre": "Karen Yised Carrillo",
     "sede": "IMAP",
     "archivo": "actas_organizadas/IMAP/Scan_0008_pagina_001.pdf",
     "revisar": true
   },
   {
     "cedula": "1232888023",
-    "nombre": "Andrea Cardina Abara",
+    "nombre": "Andrea Carolina Alvarez",
     "sede": "IMAP",
     "archivo": "actas_organizadas/IMAP/Scan_0008_pagina_001.pdf",
     "revisar": true
   },
   {
     "cedula": "1102363830",
-    "nombre": "ana M. Gallego C.",
+    "nombre": "Laura M. Gallego C.",
     "sede": "IMAP",
     "archivo": "actas_organizadas/IMAP/Scan_0008_pagina_001.pdf",
     "revisar": true
   },
   {
     "cedula": "1005065116",
-    "nombre": "Zenayda camilo Garcia",
+    "nombre": "Zenayda Carrillo Garcia",
     "sede": "IMAP",
     "archivo": "actas_organizadas/IMAP/Scan_0008_pagina_002.pdf",
     "revisar": true
   },
   {
     "cedula": "63560130",
-    "nombre": "Santa Milena Vargas Cardozo",
+    "nombre": "Sandra Milena Vargas Cardozo",
     "sede": "IMAP",
     "archivo": "actas_organizadas/IMAP/Scan_0008_pagina_003.pdf",
     "revisar": true
@@ -4474,28 +4484,28 @@ const ACTAS = [
   },
   {
     "cedula": "1098730890",
-    "nombre": "PASLY SHIRLEY CASTAÑEDA ALVAREZ",
+    "nombre": "NASLY SHIRLEY CASTAÑEDA ALVAREZ",
     "sede": "IMAP",
     "archivo": "actas_organizadas/IMAP/Scan_0008_pagina_003.pdf",
     "revisar": true
   },
   {
     "cedula": "1005326817",
-    "nombre": "Adriana lucia Martinez castillo",
+    "nombre": "Adriana Lucia Martinez Castillo",
     "sede": "IMAP",
     "archivo": "actas_organizadas/IMAP/Scan_0008_pagina_003.pdf",
     "revisar": false
   },
   {
     "cedula": "1095841773",
-    "nombre": "Pedro Felipe Chaves Suarez",
+    "nombre": "Pedro Felipe Chavez Suarez",
     "sede": "IMAP",
     "archivo": "actas_organizadas/IMAP/Scan_0008_pagina_003.pdf",
     "revisar": true
   },
   {
     "cedula": "63529905",
-    "nombre": "ERIKA PAOLA Malandez",
+    "nombre": "Erika Paola Melendez",
     "sede": "IMAP",
     "archivo": "actas_organizadas/IMAP/Scan_0008_pagina_003.pdf",
     "revisar": true
@@ -4508,7 +4518,7 @@ const ACTAS = [
     "revisar": false
   },
   {
-    "cedula": "109874097",
+    "cedula": "1098744097",
     "nombre": "Laura Fernanda Herrera N",
     "sede": "IMAP",
     "archivo": "actas_organizadas/IMAP/Scan_0008_pagina_003.pdf",
@@ -4516,14 +4526,14 @@ const ACTAS = [
   },
   {
     "cedula": "1102380534",
-    "nombre": "Angie calle Álvarez",
+    "nombre": "Angie Calle Álvarez",
     "sede": "IMAP",
     "archivo": "actas_organizadas/IMAP/Scan_0008_pagina_003.pdf",
     "revisar": false
   },
   {
     "cedula": "1005198846",
-    "nombre": "Juan Pablo Díaz Mechino",
+    "nombre": "Juan Pablo Díaz Medina",
     "sede": "IMAP",
     "archivo": "actas_organizadas/IMAP/Scan_0008_pagina_003.pdf",
     "revisar": true
@@ -4551,7 +4561,7 @@ const ACTAS = [
   },
   {
     "cedula": "1083076201",
-    "nombre": "Cal. F. Cosa c.",
+    "nombre": "Carlos. F. Celis",
     "sede": "CIE",
     "archivo": "actas_organizadas/CIE/Scan_0009_pagina_001.pdf",
     "revisar": true
@@ -4565,14 +4575,14 @@ const ACTAS = [
   },
   {
     "cedula": "1096538133",
-    "nombre": "Jose Luis REY",
+    "nombre": "Jose Luis Rey",
     "sede": "CIE",
     "archivo": "actas_organizadas/CIE/Scan_0009_pagina_002.pdf",
     "revisar": true
   },
   {
     "cedula": "63563186",
-    "nombre": "Laura Pardo Krñez",
+    "nombre": "Laura Pardo Nuñez",
     "sede": "CIE",
     "archivo": "actas_organizadas/CIE/Scan_0009_pagina_002.pdf",
     "revisar": true
@@ -4586,21 +4596,21 @@ const ACTAS = [
   },
   {
     "cedula": "1098821060",
-    "nombre": "Ins Yomara Hernández 6",
+    "nombre": "Iris Yomara Hernández G",
     "sede": "CIE",
     "archivo": "actas_organizadas/CIE/Scan_0009_pagina_002.pdf",
     "revisar": true
   },
   {
     "cedula": "37617720",
-    "nombre": "Eddy Carrillo Quesanta",
+    "nombre": "Eddy Carrillo Quesada",
     "sede": "CIE",
     "archivo": "actas_organizadas/CIE/Scan_0009_pagina_002.pdf",
     "revisar": true
   },
   {
     "cedula": "63448855",
-    "nombre": "Audiar Quilla cosid",
+    "nombre": "Andres Carrillo",
     "sede": "CIE",
     "archivo": "actas_organizadas/CIE/Scan_0009_pagina_002.pdf",
     "revisar": true
@@ -4614,21 +4624,21 @@ const ACTAS = [
   },
   {
     "cedula": "77091360",
-    "nombre": "Julio AlbertoMartini",
+    "nombre": "Julio Alberto Martinez",
     "sede": "CIE",
     "archivo": "actas_organizadas/CIE/Scan_0009_pagina_002.pdf",
     "revisar": true
   },
   {
     "cedula": "63452417",
-    "nombre": "Sara Millera Gamboa ti.",
+    "nombre": "Sara Milena Gamboa.",
     "sede": "CIE",
     "archivo": "actas_organizadas/CIE/Scan_0009_pagina_002.pdf",
     "revisar": true
   },
   {
     "cedula": "1005280520",
-    "nombre": "Carolina Mendez Argenta",
+    "nombre": "Carolina Mendez Angarita",
     "sede": "CIE",
     "archivo": "actas_organizadas/CIE/Scan_0009_pagina_003.pdf",
     "revisar": true
@@ -4642,7 +4652,7 @@ const ACTAS = [
   },
   {
     "cedula": "1007540707",
-    "nombre": "kord Juliana Contrerase.",
+    "nombre": "Karol Juliana Contreras.",
     "sede": "CIE",
     "archivo": "actas_organizadas/CIE/Scan_0009_pagina_003.pdf",
     "revisar": true
@@ -4655,8 +4665,8 @@ const ACTAS = [
     "revisar": false
   },
   {
-    "cedula": "1008945",
-    "nombre": "Juan Diego Murano Aringo",
+    "cedula": "1005289456",
+    "nombre": "Juan Diego Arango",
     "sede": "CIE",
     "archivo": "actas_organizadas/CIE/Scan_0009_pagina_003.pdf",
     "revisar": true
@@ -4712,21 +4722,21 @@ const ACTAS = [
   },
   {
     "cedula": "1098743885",
-    "nombre": "Mauricio Gómez 7",
+    "nombre": "Mauricio Gómez",
     "sede": "CIE",
     "archivo": "actas_organizadas/CIE/Scan_0009_pagina_004.pdf",
     "revisar": true
   },
   {
     "cedula": "37749432",
-    "nombre": "Luz Mary Olsa lein",
+    "nombre": "Luz Mary León",
     "sede": "CIE",
     "archivo": "actas_organizadas/CIE/Scan_0009_pagina_004.pdf",
     "revisar": true
   },
   {
     "cedula": "1232892587",
-    "nombre": "Angelica Pinilla 6.",
+    "nombre": "Angelica Pinilla G.",
     "sede": "CIE",
     "archivo": "actas_organizadas/CIE/Scan_0009_pagina_004.pdf",
     "revisar": false
@@ -4740,14 +4750,14 @@ const ACTAS = [
   },
   {
     "cedula": "1005370914",
-    "nombre": "Jireh Daniela Blanco",
+    "nombre": "Jireth Daniela Blanco",
     "sede": "CIE",
     "archivo": "actas_organizadas/CIE/Scan_0009_pagina_004.pdf",
     "revisar": false
   },
   {
     "cedula": "91280805",
-    "nombre": "Evaristo Vaga F.",
+    "nombre": "Evaristo Vega F.",
     "sede": "CIE",
     "archivo": "actas_organizadas/CIE/Scan_0009_pagina_004.pdf",
     "revisar": true
@@ -4775,14 +4785,14 @@ const ACTAS = [
   },
   {
     "cedula": "1098688316",
-    "nombre": "Yeiner Andrés Pueda",
+    "nombre": "Yeiner Andrés Rueda",
     "sede": "CIE",
     "archivo": "actas_organizadas/CIE/Scan_0009_pagina_005.pdf",
     "revisar": true
   },
   {
     "cedula": "1098822445",
-    "nombre": "Melany Julieth Angulo Jagos",
+    "nombre": "Melany Julieth Angulo Lagos",
     "sede": "CIE",
     "archivo": "actas_organizadas/CIE/Scan_0009_pagina_005.pdf",
     "revisar": true
@@ -4817,14 +4827,14 @@ const ACTAS = [
   },
   {
     "cedula": "1098667100",
-    "nombre": "Mayer lin castañeda",
+    "nombre": "Mayerlin Castañeda",
     "sede": "CIE",
     "archivo": "actas_organizadas/CIE/Scan_0009_pagina_005.pdf",
     "revisar": true
   },
   {
     "cedula": "1102378781",
-    "nombre": "Yenny gurley jurado bohorquez",
+    "nombre": "Yenny Yurley Jurado Bohorquez",
     "sede": "CIE",
     "archivo": "actas_organizadas/CIE/Scan_0009_pagina_006.pdf",
     "revisar": true
@@ -4838,7 +4848,7 @@ const ACTAS = [
   },
   {
     "cedula": "1102376135",
-    "nombre": "leica Tatiana Fuentes O.",
+    "nombre": "Leidy Tatiana Fuentes O.",
     "sede": "CIE",
     "archivo": "actas_organizadas/CIE/Scan_0009_pagina_006.pdf",
     "revisar": true
@@ -4859,14 +4869,14 @@ const ACTAS = [
   },
   {
     "cedula": "1005132228",
-    "nombre": "Claudio Jimena Gómez",
+    "nombre": "Claudia Jimena Gómez",
     "sede": "CIE",
     "archivo": "actas_organizadas/CIE/Scan_0009_pagina_006.pdf",
     "revisar": false
   },
   {
-    "cedula": "10958298",
-    "nombre": "Azleida Diaz Testa",
+    "cedula": "1095829858",
+    "nombre": "Azleida Diaz Tuesta",
     "sede": "CIE",
     "archivo": "actas_organizadas/CIE/Scan_0009_pagina_006.pdf",
     "revisar": true
@@ -4901,7 +4911,7 @@ const ACTAS = [
   },
   {
     "cedula": "1095788828",
-    "nombre": "Paula Alejandra Anas",
+    "nombre": "Paula Alejandra Arias",
     "sede": "CIE",
     "archivo": "actas_organizadas/CIE/Scan_0009_pagina_007.pdf",
     "revisar": false
@@ -4929,28 +4939,28 @@ const ACTAS = [
   },
   {
     "cedula": "1007952599",
-    "nombre": "Rayza 42 Redondo",
+    "nombre": "Rayza Liz Redondo",
     "sede": "CIE",
     "archivo": "actas_organizadas/CIE/Scan_0009_pagina_007.pdf",
     "revisar": true
   },
   {
     "cedula": "1042444886",
-    "nombre": "Brigorth G. Higuera Ruedas",
+    "nombre": "Briguith G. Higuera Ruedas",
     "sede": "CIE",
     "archivo": "actas_organizadas/CIE/Scan_0009_pagina_008.pdf",
     "revisar": true
   },
   {
-    "cedula": "1095837002",
-    "nombre": "Carlos Daniel Gonzalez france",
+    "cedula": "1095831002",
+    "nombre": "Carlos Daniel Gonzalez Franco",
     "sede": "CIE",
     "archivo": "actas_organizadas/CIE/Scan_0009_pagina_008.pdf",
     "revisar": true
   },
   {
     "cedula": "1090227631",
-    "nombre": "Maria Angelica Florez ical",
+    "nombre": "Maria Angelica Florez Leal",
     "sede": "CIE",
     "archivo": "actas_organizadas/CIE/Scan_0009_pagina_008.pdf",
     "revisar": false
@@ -4964,14 +4974,14 @@ const ACTAS = [
   },
   {
     "cedula": "1098787504",
-    "nombre": "Laura Melissa Prado 6.",
+    "nombre": "Laura Melissa Prado G.",
     "sede": "CIE",
     "archivo": "actas_organizadas/CIE/Scan_0009_pagina_009.pdf",
     "revisar": false
   },
   {
-    "cedula": "1048406147",
-    "nombre": "Nayard Paola Gómez M.",
+    "cedula": "1098406147",
+    "nombre": "Nayarid Paola Gómez M.",
     "sede": "CIE",
     "archivo": "actas_organizadas/CIE/Scan_0009_pagina_009.pdf",
     "revisar": true
@@ -4985,28 +4995,28 @@ const ACTAS = [
   },
   {
     "cedula": "1095298546",
-    "nombre": "Nicol Daniela Contreras Suarez",
+    "nombre": "Nicoll Daniela Contreras Suarez",
     "sede": "CIE",
     "archivo": "actas_organizadas/CIE/Scan_0009_pagina_009.pdf",
     "revisar": true
   },
   {
     "cedula": "13721475",
-    "nombre": "JAIMEHERNANDEZ MONTERO",
+    "nombre": "Jaime Hernandez Montero",
     "sede": "CIE",
     "archivo": "actas_organizadas/CIE/Scan_0009_pagina_009.pdf",
     "revisar": true
   },
   {
-    "cedula": "10911045123",
-    "nombre": "Dana Veltza Radiquer berna",
+    "cedula": "1094045123",
+    "nombre": "Dana Yelitza Rodriguez Becerra",
     "sede": "CIE",
     "archivo": "actas_organizadas/CIE/Scan_0009_pagina_009.pdf",
     "revisar": true
   },
   {
     "cedula": "1102722904",
-    "nombre": "Yesenia Maria Duran Galvos",
+    "nombre": "Yesenia Maria Duran",
     "sede": "CIE",
     "archivo": "actas_organizadas/CIE/Scan_0009_pagina_010.pdf",
     "revisar": true
@@ -5027,14 +5037,14 @@ const ACTAS = [
   },
   {
     "cedula": "1003258399",
-    "nombre": "maria conla Rinalay trujillo.",
+    "nombre": "Maria Camila Trujillo.",
     "sede": "CIE",
     "archivo": "actas_organizadas/CIE/Scan_0009_pagina_010.pdf",
     "revisar": true
   },
   {
     "cedula": "1098824350",
-    "nombre": "Oma, Nicolas Ferro Peñada",
+    "nombre": "Omar Nicolas Ferro Peñada",
     "sede": "CIE",
     "archivo": "actas_organizadas/CIE/Scan_0009_pagina_010.pdf",
     "revisar": true
@@ -5069,7 +5079,7 @@ const ACTAS = [
   },
   {
     "cedula": "1016031025",
-    "nombre": "Diana Paula Suarez S.",
+    "nombre": "Diana Paola Suarez S.",
     "sede": "CIE",
     "archivo": "actas_organizadas/CIE/Scan_0009_pagina_010.pdf",
     "revisar": false
@@ -5097,14 +5107,14 @@ const ACTAS = [
   },
   {
     "cedula": "1098817468",
-    "nombre": "Sharon Prosta Villareal",
+    "nombre": "Sharon Acosta Villareal",
     "sede": "CIE",
     "archivo": "actas_organizadas/CIE/Scan_0009_pagina_011.pdf",
     "revisar": true
   },
   {
     "cedula": "1005290361",
-    "nombre": "Peris Padla Páez A",
+    "nombre": "Yeris Paola Páez A",
     "sede": "CIE",
     "archivo": "actas_organizadas/CIE/Scan_0009_pagina_011.pdf",
     "revisar": true
@@ -5118,7 +5128,7 @@ const ACTAS = [
   },
   {
     "cedula": "1104184833",
-    "nombre": "ISABEL GARSEIA HERNANDEZ VALIENTE",
+    "nombre": "ISABEL HERNANDEZ VALIENTE",
     "sede": "CIE",
     "archivo": "actas_organizadas/CIE/Scan_0009_pagina_011.pdf",
     "revisar": false
@@ -5131,7 +5141,7 @@ const ACTAS = [
     "revisar": true
   },
   {
-    "cedula": "1048824606",
+    "cedula": "1098824606",
     "nombre": "Miguel Angel Barajas Jurado",
     "sede": "CIE",
     "archivo": "actas_organizadas/CIE/Scan_0009_pagina_011.pdf",
@@ -5139,7 +5149,7 @@ const ACTAS = [
   },
   {
     "cedula": "1100220498",
-    "nombre": "lissethe Fernanda Serra G.",
+    "nombre": "Lissethe Fernanda Serra G.",
     "sede": "CIE",
     "archivo": "actas_organizadas/CIE/Scan_0009_pagina_011.pdf",
     "revisar": true
@@ -5147,70 +5157,70 @@ const ACTAS = [
   {
     "cedula": "63561899",
     "nombre": "Elisabeth Hecker V.",
-    "sede": "",
+    "sede": "CIE",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0009_pagina_012.pdf",
     "revisar": true
   },
   {
     "cedula": "1005153956",
     "nombre": "Jhonatan Andres Angarita A.",
-    "sede": "",
+    "sede": "CIE",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0009_pagina_012.pdf",
     "revisar": true
   },
   {
     "cedula": "1095822015",
     "nombre": "MONICA MATEUS R.",
-    "sede": "",
+    "sede": "CIE",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0009_pagina_012.pdf",
     "revisar": true
   },
   {
     "cedula": "1099210673",
     "nombre": "Camila Cepeda C.",
-    "sede": "",
+    "sede": "CIE",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0009_pagina_012.pdf",
     "revisar": true
   },
   {
     "cedula": "1098722795",
     "nombre": "M. Alexandra Rodríguez",
-    "sede": "",
+    "sede": "CIE",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0009_pagina_012.pdf",
     "revisar": true
   },
   {
     "cedula": "1098604365",
     "nombre": "Daniela Rojas Patiño",
-    "sede": "",
+    "sede": "CIE",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0009_pagina_012.pdf",
     "revisar": true
   },
   {
-    "cedula": "1702380705",
-    "nombre": "Robwon desid figuero E",
-    "sede": "",
+    "cedula": "1102380705",
+    "nombre": "Robinson Yesid Figueroa",
+    "sede": "CIE",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0009_pagina_012.pdf",
     "revisar": true
   },
   {
     "cedula": "1081911004",
-    "nombre": "Fabian tamayo Eljure",
-    "sede": "",
+    "nombre": "Fabian Tamayo",
+    "sede": "CIE",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0009_pagina_012.pdf",
     "revisar": true
   },
   {
     "cedula": "1005327521",
-    "nombre": "María valentina Pinzón C.",
-    "sede": "",
+    "nombre": "María Valentina Pinzón C.",
+    "sede": "CIE",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0009_pagina_012.pdf",
     "revisar": true
   },
   {
     "cedula": "1005340017",
     "nombre": "Luis Jezreel Gomez",
-    "sede": "",
+    "sede": "CIE",
     "archivo": "actas_organizadas/sede_desconocida/Scan_0009_pagina_012.pdf",
     "revisar": true
   }
