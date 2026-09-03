@@ -1,0 +1,19 @@
+# Datos reales de personas — NUNCA deben subirse a un repo público
+actas_pdf/
+actas_pdf_originales/
+actas_organizadas/
+actas_index.xlsx
+data.js
+sedes.txt
+
+# Credenciales
+.env
+*.key
+
+# Entorno de Python
+venv/
+__pycache__/
+*.pyc
+
+# Sistema
+.DS_Store
