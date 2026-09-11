@@ -713,16 +713,45 @@ document.addEventListener('DOMContentLoaded', () => {
     renderPaginacion(totalFiltradas, paginaActual, registrosPorPagina);
   }
 
-  function activarVistaAutenticado(user) {
+  async function asegurarActasCargadas() {
+    if (typeof ACTAS !== 'undefined' && Array.isArray(ACTAS) && ACTAS.length > 0) {
+      return true;
+    }
+
+    return new Promise((resolve, reject) => {
+      const viejos = document.querySelectorAll('script[data-dynamic-catalog]');
+      viejos.forEach(s => s.remove());
+
+      const script = document.createElement('script');
+      script.setAttribute('data-dynamic-catalog', 'true');
+      script.src = 'data.js?t=' + Date.now();
+      script.onload = () => {
+        resolve(true);
+      };
+      script.onerror = () => {
+        reject(new Error('No autorizado para cargar catálogo de actas'));
+      };
+      document.body.appendChild(script);
+    });
+  }
+
+  async function activarVistaAutenticado(user) {
     loginView.classList.add('hidden');
     appView.classList.remove('hidden');
 
     if (sessionUserName) sessionUserName.textContent = user.name || user.username;
     if (sessionUserRole) sessionUserRole.textContent = user.role || 'Usuario';
 
-    inicializarSedes();
-    paginaActual = 1;
-    renderResultados();
+    try {
+      await asegurarActasCargadas();
+      inicializarSedes();
+      paginaActual = 1;
+      renderResultados();
+    } catch (err) {
+      desactivarVistaAutenticado();
+      mostrarErrorLogin('No fue posible cargar el catálogo de actas. Por favor autentíquese nuevamente.');
+      return;
+    }
 
     AuthService.startInactivityWatcher(() => {
       desactivarVistaAutenticado();
@@ -746,6 +775,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (loginPassInput) loginPassInput.value = '';
     ocultarErrorLogin();
+
+    // Purgar catálogo de la memoria del cliente
+    if (typeof window.ACTAS !== 'undefined') {
+      window.ACTAS = [];
+    }
+    const dinamicos = document.querySelectorAll('script[data-dynamic-catalog]');
+    dinamicos.forEach(s => s.remove());
   }
 
   // Formulario de Inicio de Sesión
