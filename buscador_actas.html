@@ -1,334 +1,244 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Buscador de Actas — Ciberseguridad FCV</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --bg: #F5F6F4;
-    --surface: #FFFFFF;
-    --ink: #16242A;
-    --muted: #5B6B70;
-    --accent: #1F6F6B;
-    --accent-soft: #E4F0EF;
-    --border: #DCE3E2;
-    --flag: #9C6B2E;
-    --flag-soft: #F5EBDC;
-  }
-  * { box-sizing: border-box; }
-  body{
-    margin:0;
-    background:var(--bg);
-    color:var(--ink);
-    font-family:'Inter', sans-serif;
-    -webkit-font-smoothing:antialiased;
-  }
-  .wrap{ max-width: 920px; margin: 0 auto; padding: 48px 24px 80px; }
- 
-  header{ display:flex; align-items:baseline; justify-content:space-between; margin-bottom:36px; }
-  .brand{ display:flex; align-items:center; gap:10px; }
-  .brand svg{ flex-shrink:0; }
-  .brand-text{ font-size:14px; color:var(--muted); font-weight:500; }
-  .brand-text strong{ color:var(--ink); }
- 
-  h1{
-    font-family:'Fraunces', serif;
-    font-weight:600;
-    font-size:34px;
-    line-height:1.15;
-    margin:0 0 28px;
-    letter-spacing:-0.01em;
-  }
- 
-  .search-zone{
-    background:var(--surface);
-    border:1px solid var(--border);
-    border-radius:14px;
-    padding:20px;
-    box-shadow: 0 1px 2px rgba(22,36,42,0.04);
-    animation: rise 0.5s ease-out;
-  }
-  @keyframes rise{
-    from{ opacity:0; transform: translateY(10px); }
-    to{ opacity:1; transform: translateY(0); }
-  }
- 
-  .search-input-row{ position:relative; }
-  .search-input-row svg{ position:absolute; left:14px; top:50%; transform:translateY(-50%); }
-  input[type="text"]{
-    width:100%;
-    font-family:'Inter', sans-serif;
-    font-size:17px;
-    padding:14px 14px 14px 44px;
-    border:1px solid var(--border);
-    border-radius:10px;
-    outline:none;
-    background:var(--bg);
-    color:var(--ink);
-  }
-  input[type="text"]:focus{ border-color: var(--accent); background: var(--surface); }
-  input[type="text"]::placeholder{ color:#8A9A9E; }
- 
-  .filter-row{ display:flex; gap:10px; margin-top:12px; align-items:center; }
-  select{
-    font-family:'Inter', sans-serif;
-    font-size:14px;
-    padding:9px 12px;
-    border:1px solid var(--border);
-    border-radius:8px;
-    background:var(--surface);
-    color:var(--ink);
-    cursor:pointer;
-  }
-  .reset-btn{
-    font-family:'Inter', sans-serif;
-    font-size:14px;
-    color:var(--muted);
-    background:none;
-    border:none;
-    cursor:pointer;
-    padding:9px 6px;
-  }
-  .reset-btn:hover{ color:var(--ink); }
- 
-  .count-row{
-    margin: 22px 2px 12px;
-    font-size:13px;
-    color:var(--muted);
-  }
-  .count-row strong{ color:var(--ink); }
- 
-  table{ width:100%; border-collapse:collapse; }
-  thead th{
-    text-align:left;
-    font-size:12px;
-    font-weight:600;
-    color:var(--muted);
-    padding:0 14px 8px;
-    border-bottom:1px solid var(--border);
-  }
-  tbody tr{
-    background:var(--surface);
-    transition: background 0.12s ease;
-  }
-  tbody tr:hover{ background: var(--accent-soft); }
-  tbody td{
-    padding:13px 14px;
-    font-size:14.5px;
-    border-bottom:1px solid var(--border);
-    vertical-align:middle;
-  }
-  tbody tr:last-child td{ border-bottom:none; }
-  .cedula{ font-variant-numeric: tabular-nums; color:var(--muted); }
-  .nombre{ font-weight:500; }
-  .sede{ color:var(--muted); }
-  .flag-pill{
-    display:inline-block;
-    margin-left:8px;
-    font-size:11px;
-    font-weight:600;
-    color:var(--flag);
-    background:var(--flag-soft);
-    padding:2px 8px;
-    border-radius:20px;
-  }
-  .ver-btn{
-    font-family:'Inter', sans-serif;
-    font-size:13.5px;
-    font-weight:500;
-    color:var(--accent);
-    background:var(--accent-soft);
-    border:none;
-    padding:7px 14px;
-    border-radius:7px;
-    cursor:pointer;
-  }
-  .ver-btn:hover{ background:#D5E9E7; }
- 
-  .acciones{ display:flex; gap:6px; }
-  .descargar-btn{
-    display:inline-block;
-    font-family:'Inter', sans-serif;
-    font-size:13.5px;
-    font-weight:500;
-    color:var(--muted);
-    background:var(--bg);
-    border:1px solid var(--border);
-    padding:6px 13px;
-    border-radius:7px;
-    cursor:pointer;
-    text-decoration:none;
-  }
-  .descargar-btn:hover{ background:var(--surface); color:var(--ink); }
- 
-  .empty{
-    text-align:center;
-    padding:60px 20px;
-    color:var(--muted);
-    font-size:15px;
-  }
- 
-  .toast{
-    position:fixed;
-    left:50%;
-    bottom:28px;
-    transform: translateX(-50%) translateY(20px);
-    background:var(--ink);
-    color:#fff;
-    font-size:13.5px;
-    padding:12px 18px;
-    border-radius:9px;
-    opacity:0;
-    transition: opacity 0.2s ease, transform 0.2s ease;
-    pointer-events:none;
-    max-width: 90%;
-  }
-  .toast.show{ opacity:1; transform: translateX(-50%) translateY(0); }
- 
-  @media (max-width: 600px){
-    thead th:nth-child(3), tbody td:nth-child(3){ display:none; }
-    h1{ font-size:26px; }
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Content Security Policy (CWE-693) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self';">
+  
+  <!-- Anti-MIME Sniffing (CWE-693) -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  
+  <title>Buscador de Actas — Ciberseguridad FCV</title>
+  
+  <!-- Icono Institucional Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  
+  <!-- Anti-Clickjacking: Protegido por X-Frame-Options: SAMEORIGIN y CSP frame-ancestors 'self' -->
+  
+  <!-- Tipografías Locales 100% Autónomas (CWE-345 / Cero dependencias externas SRI) -->
+  <link rel="stylesheet" href="fonts.css">
+  
+  <!-- Hoja de Estilos Institucional FCV y Modo Oscuro/Claro -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="wrap">
- 
-  <header>
-    <div class="brand">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-        <path d="M6 3H15L19 7V21H6V3Z" stroke="#1F6F6B" stroke-width="1.6" stroke-linejoin="round"/>
-        <path d="M15 3V7H19" stroke="#1F6F6B" stroke-width="1.6" stroke-linejoin="round"/>
-        <path d="M9 12.5H16M9 15.5H16" stroke="#1F6F6B" stroke-width="1.6" stroke-linecap="round"/>
-      </svg>
-      <div class="brand-text"><strong>Actas digitalizadas</strong> · Ciberseguridad</div>
-    </div>
-  </header>
- 
-  <h1>Busca un acta por cédula, nombre o sede</h1>
- 
-  <div class="search-zone">
-    <div class="search-input-row">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-        <circle cx="11" cy="11" r="7" stroke="#8A9A9E" stroke-width="1.8"/>
-        <path d="M20 20L16.5 16.5" stroke="#8A9A9E" stroke-width="1.8" stroke-linecap="round"/>
-      </svg>
-      <input type="text" id="searchInput" placeholder="Escribe una cédula, un nombre o parte de él…" autocomplete="off">
-    </div>
-    <div class="filter-row">
-      <select id="sedeFilter">
-        <option value="">Todas las sedes</option>
-      </select>
-      <button class="reset-btn" id="resetBtn">Limpiar filtros</button>
+
+  <!-- ====================================================================
+       VISTA 1: PANTALLA DE AUTENTICACION (LOGIN)
+       ==================================================================== -->
+  <div id="loginView" class="login-wrapper">
+    <div class="login-card">
+      <div class="login-header">
+        <!-- Logotipo Institucional FCV -->
+        <div class="login-logo-capsule">
+          <img src="assets/logo_fcv.png" alt="Logo FCV - Cuidamos Vidas" class="login-logo-img">
+        </div>
+        <h2>Control de Acceso Seguro</h2>
+        <p>Buscador de Actas Digitalizadas<br><strong>Ciberseguridad · Fundación Cardiovascular de Colombia</strong></p>
+      </div>
+
+      <!-- Alerta visual de error en credenciales -->
+      <div id="loginErrorAlert" class="login-error-alert" role="alert" aria-live="assertive">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="8" x2="12" y2="12"></line>
+          <line x1="12" y1="16" x2="12.01" y2="16"></line>
+        </svg>
+        <span id="loginErrorMsg">Usuario o contraseña incorrectos.</span>
+      </div>
+
+      <form id="loginForm" autocomplete="off">
+        <div class="form-group">
+          <label for="loginUser" class="form-label">Usuario institucional</label>
+          <div class="input-with-icon">
+            <span class="input-icon-left">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </span>
+            <input type="text" id="loginUser" class="form-control" placeholder="Ej: ciberseguridad" required autocomplete="username">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="loginPass" class="form-label">Contraseña</label>
+          <div class="input-with-icon">
+            <span class="input-icon-left">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+            </span>
+            <input type="password" id="loginPass" class="form-control" placeholder="••••••••••••" required autocomplete="current-password">
+            <button type="button" id="togglePassBtn" class="toggle-password-btn" aria-label="Mostrar contraseña">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <button type="submit" id="loginSubmitBtn" class="login-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+          </svg>
+          <span>Iniciar Sesión</span>
+        </button>
+      </form>
+
+
+
+      <div class="login-footer-note">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="16" x2="12" y2="12"></line>
+          <line x1="12" y1="8" x2="12.01" y2="8"></line>
+        </svg>
+        <span>Acceso restringido y auditado. Cumplimiento FCV DevSecOps.</span>
+      </div>
     </div>
   </div>
- 
-  <div class="count-row" id="countRow"></div>
- 
-  <div id="resultsArea"></div>
- 
-</div>
- 
-<div class="toast" id="toast"></div>
- 
-<script src="data.js"></script>
-<script>
-  const searchInput = document.getElementById('searchInput');
-  const sedeFilter = document.getElementById('sedeFilter');
-  const resetBtn = document.getElementById('resetBtn');
-  const resultsArea = document.getElementById('resultsArea');
-  const countRow = document.getElementById('countRow');
-  const toast = document.getElementById('toast');
- 
-  // Poblar el filtro de sedes a partir de los datos
-  const sedes = [...new Set(ACTAS.map(a => a.sede))].sort();
-  sedes.forEach(s => {
-    const opt = document.createElement('option');
-    opt.value = s; opt.textContent = s;
-    sedeFilter.appendChild(opt);
-  });
- 
-  function normalizar(txt){
-    return txt.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-  }
- 
-  function nombreDescarga(cedula, nombre){
-    const limpio = (nombre || '').replace(/[\\/:*?"<>|]/g, '').trim().replace(/\s+/g, '_');
-    return `${cedula}_${limpio}.pdf`;
-  }
- 
-  function render(){
-    const q = normalizar(searchInput.value.trim());
-    const sedeSel = sedeFilter.value;
- 
-    const filtradas = ACTAS.filter(a => {
-      const coincideTexto = !q || normalizar(a.nombre).includes(q) || a.cedula.includes(q);
-      const coincideSede = !sedeSel || a.sede === sedeSel;
-      return coincideTexto && coincideSede;
-    });
- 
-    countRow.innerHTML = `<strong>${filtradas.length}</strong> acta${filtradas.length === 1 ? '' : 's'} encontrada${filtradas.length === 1 ? '' : 's'}`;
- 
-    if (filtradas.length === 0){
-      resultsArea.innerHTML = `<div class="empty">No encontramos ninguna acta con eso.<br>Revisa que la cédula o el nombre estén bien escritos.</div>`;
-      return;
-    }
- 
-    const filas = filtradas.map(a => `
-      <tr>
-        <td class="cedula">${a.cedula}</td>
-        <td class="nombre">${a.nombre}</td>        <td class="sede">${a.sede}</td>
-        <td>
-          <div class="acciones">
-            <button class="ver-btn" data-archivo="${a.archivo}">Ver PDF</button>
-            <a class="descargar-btn" href="${a.archivo}" download="${nombreDescarga(a.cedula, a.nombre)}">Descargar</a>
+
+  <!-- ====================================================================
+       VISTA 2: APLICACION PRINCIPAL (BUSCADOR DE ACTAS)
+       Solo accesible tras autenticación exitosa
+       ==================================================================== -->
+  <div id="appView" class="wrap hidden">
+    <header>
+      <div class="brand">
+        <!-- Logo Institucional en Cápsula de Alto Contraste -->
+        <div class="brand-logo-capsule">
+          <img src="assets/logo_fcv.png" alt="Logo FCV" class="brand-logo-img">
+        </div>
+        <div class="brand-info">
+          <span class="brand-title">Actas Digitalizadas</span>
+          <span class="brand-subtitle">Ciberseguridad · <span>FCV</span></span>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <!-- Conmutador de Modo Oscuro / Claro -->
+        <button id="themeToggleBtn" class="theme-toggle-btn" title="Alternar modo oscuro / claro" aria-label="Cambiar tema">
+          <svg id="themeIconSun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg id="themeIconMoon" class="hidden" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Badge de Usuario Autenticado -->
+        <div class="user-profile-badge">
+          <span class="status-indicator-dot" title="Sesión activa"></span>
+          <span id="sessionUserName">Usuario</span>
+          <span id="sessionUserRole" class="user-role-tag">Rol</span>
+        </div>
+
+        <!-- Botón Cerrar Sesión -->
+        <button id="logoutBtn" class="logout-btn" title="Finalizar sesión segura">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+            <polyline points="16 17 21 12 16 7"></polyline>
+            <line x1="21" y1="12" x2="9" y2="12"></line>
+          </svg>
+          <span>Salir</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <div class="main-headline">
+        <h1>Búsqueda de Actas Digitalizadas</h1>
+        <p>Consulta, verificación y descarga segura de actas institucionales por cédula, nombre o sede.</p>
+      </div>
+
+      <section class="search-zone" aria-label="Zona de búsqueda y filtros">
+        <div class="search-input-row">
+          <span class="search-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </span>
+          <input type="text" id="searchInput" class="search-input" placeholder="Escribe una cédula, un nombre o parte de él…" autocomplete="off" aria-label="Buscar actas">
+          <button type="button" id="clearSearchBtn" class="clear-search-btn hidden" title="Limpiar búsqueda" aria-label="Limpiar búsqueda">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+
+        <div class="filter-row">
+          <div class="filter-controls-group">
+            <div class="select-wrapper">
+              <select id="sedeFilter" class="filter-select" aria-label="Filtrar por sede">
+                <option value="">Todas las sedes</option>
+              </select>
+              <span class="select-arrow">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </span>
+            </div>
+
+            <div class="select-wrapper">
+              <select id="pageSizeSelect" class="filter-select" aria-label="Registros por página">
+                <option value="25">25 por página</option>
+                <option value="50" selected>50 por página</option>
+                <option value="100">100 por página</option>
+              </select>
+              <span class="select-arrow">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </span>
+            </div>
+
+            <button type="button" class="reset-btn" id="resetBtn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="1 4 1 10 7 10"></polyline>
+                <polyline points="23 20 23 14 17 14"></polyline>
+                <path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"></path>
+              </svg>
+              <span>Restablecer</span>
+            </button>
           </div>
-        </td>
-      </tr>
-    `).join('');
- 
-    resultsArea.innerHTML = `
-      <table>
-        <thead>
-          <tr><th>Cédula</th><th>Nombre</th><th>Sede</th><th></th></tr>
-        </thead>
-        <tbody>${filas}</tbody>
-      </table>
-    `;
- 
-    resultsArea.querySelectorAll('.ver-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const archivo = btn.getAttribute('data-archivo');
-        // Funciona si este HTML vive en la misma carpeta que
-        // actas_organizadas/ (es decir, en la raíz del proyecto).
-        const ventana = window.open(archivo, '_blank');
-        if (!ventana) {
-          mostrarToast('El navegador bloqueó la ventana emergente. Habilita popups para este archivo, o ábrelo manualmente desde la carpeta.');
-        }
-      });
-    });
-  }
- 
-  let toastTimer;
-  function mostrarToast(msg){
-    toast.textContent = msg;
-    toast.classList.add('show');
-    clearTimeout(toastTimer);
-    toastTimer = setTimeout(() => toast.classList.remove('show'), 2600);
-  }
- 
-  searchInput.addEventListener('input', render);
-  sedeFilter.addEventListener('change', render);
-  resetBtn.addEventListener('click', () => {
-    searchInput.value = '';
-    sedeFilter.value = '';
-    render();
-  });
- 
-  render();
-</script>
+        </div>
+      </section>
+
+      <!-- Fila de metadatos y paginación superior -->
+      <div class="meta-info-row">
+        <div id="countRow" aria-live="polite"></div>
+        <div id="pageInfoRow" aria-live="polite"></div>
+      </div>
+
+      <!-- Contenedor dinámico de resultados (Construcción programática segura) -->
+      <div id="resultsArea" role="region" aria-label="Resultados de actas"></div>
+
+      <!-- Contenedor de paginación inferior -->
+      <div id="paginationArea" class="pagination-container" aria-label="Navegación de páginas"></div>
+    </main>
+  </div>
+
+  <!-- Componente Toast de notificaciones accesibles -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- Scripts: Datos y Lógica de Aplicación -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>

@@ -33,9 +33,23 @@ This doesn't replace a final human review. Handwriting varies a lot from person 
 - **Each PDF gets organized, not renamed per person**: since each page has several people on it, the file belongs to all of them — it gets organized by site, not named after just one person.
 - **The Excel is the source of truth after the first pass**: once you review and correct it by hand, `actualizar_buscador_desde_excel.py` is the only command you need to run — `data.js` is never edited directly.
 
+## Security & Production Architecture
+
+The web viewer has been reinforced according to institutional cybersecurity standards (OWASP Top 10 / CWE guidelines):
+- **Role-Based Authentication (`server.py`)**: Lightweight Python HTTP service backed by SQLite (`database/fcv_auth.db`) with SHA-256 + cryptographic salt password hashing, constant-time comparison, and brute-force protection (5 failed attempts trigger a 30s lockout).
+- **Anti-DOM XSS (CWE-79 / CWE-116)**: 100% pure DOM node construction (`document.createElement`, `textContent`) — zero unsafe `innerHTML` usage.
+- **Strict Content Security Policy (CSP)**: Zero external CDNs. All fonts (Montserrat, Inter) and branding assets are locally hosted to prevent SRI (CWE-345) and third-party leakage (CWE-200).
+- **Anti-Clickjacking (CWE-1021)**: Enforced via `X-Frame-Options: SAMEORIGIN` and `frame-ancestors 'self'`.
+- **Server Privacy (CWE-497)**: Server header obfuscated to `FCV-SecureServer`; direct URL access to `database/` and `.db` files is forbidden (HTTP 403).
+
 ## About the data
 
-This repo does **not** include any real record, the generated Excel, or `data.js` — those files contain real employee names and ID numbers and are excluded via `.gitignore`. To test the pipeline without real data, use `generar_actas_prueba.py`, which generates fake records with the same table structure.
+This repo does **not** include any real record, the generated Excel, or `data.js` — those files contain real employee names, ID numbers, and medical/administrative documents, and are strictly excluded via `.gitignore`. 
+
+For local UI testing and development, a template [`data.example.js`](data.example.js) is provided. To use it:
+```bash
+cp data.example.js data.js
+```
 
 ## How to run it
 
@@ -44,21 +58,23 @@ python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 
+# 1. Pipeline execution (optional if testing with sample data)
 # Azure Document Intelligence credentials (Free F0 tier)
 export AZURE_DOCINTEL_ENDPOINT="https://YOUR-RESOURCE.cognitiveservices.azure.com/"
 export AZURE_DOCINTEL_KEY="your-key"
 
-# Test with fake records (no real documents needed)
 python generar_actas_prueba.py
 python dividir_pdfs.py
 python procesar_actas.py
-
-# After reviewing/correcting actas_index.xlsx by hand:
 python actualizar_buscador_desde_excel.py
 
-# Open buscador_actas.html in the browser
+# 2. Launch the Secure Search Server
+python3 server.py 8080
+
+# Navigate to http://127.0.0.1:8080 in your browser.
 ```
 
 ## Stack
 
-Python (Azure AI Document Intelligence, PyMuPDF, openpyxl) + framework-free HTML/CSS/JS for the search tool.
+Python (Azure AI Document Intelligence, PyMuPDF, openpyxl, SQLite3) + Vanilla HTML5/CSS3/JS (WCAG AAA compliant, Dark/Light mode, self-hosted typography).
+

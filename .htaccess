@@ -1,0 +1,41 @@
+# ==============================================================================
+# CONFIGURACION DE SEGURIDAD APACHE (FCV DEVSECOPS)
+# Mitigación de alertas OWASP ZAP & Reporte de Vulnerabilidades FCV
+# ==============================================================================
+
+# 1. Cabeceras HTTP de Seguridad
+<IfModule mod_headers.c>
+    # Protección Anti-Clickjacking (CWE-1021)
+    Header always set X-Frame-Options "SAMEORIGIN"
+    
+    # Prevención de MIME-Sniffing (CWE-693)
+    Header always set X-Content-Type-Options "nosniff"
+    
+    # Content Security Policy (CWE-693)
+    Header always set Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; object-src 'none'; frame-ancestors 'self'; base-uri 'self'; form-action 'self';"
+    
+    # Política de Referrer
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    
+    # Restricción de APIs del navegador
+    Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+    
+    # Protección XSS heredada para navegadores antiguos
+    Header always set X-XSS-Protection "1; mode=block"
+
+    # Ocultar o eliminar información de cabeceras de servidor (CWE-497)
+    Header unset Server
+    Header always unset X-Powered-By
+</IfModule>
+
+# 2. Desactivar listado de directorios (Directory Browsing)
+Options -Indexes
+
+# 3. Restringir acceso a archivos ocultos, base de datos SQLite y scripts de backend (CWE-200 / CWE-538)
+<FilesMatch "(^\.|\.(db|sqlite|sqlite3|py|env|sh|log)$)">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# 4. Desactivar firma informativa del servidor
+ServerSignature Off

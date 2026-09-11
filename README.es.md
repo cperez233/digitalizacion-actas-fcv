@@ -33,9 +33,23 @@ Esto no reemplaza una revisión humana final. La letra manuscrita de cada person
 - **Cada PDF se organiza, no se renombra por persona**: como cada página tiene varias personas, el archivo pertenece a todas ellas — se organiza por sede, no se le pone el nombre de una sola.
 - **El Excel es la fuente de verdad después de la primera pasada**: una vez lo revisas y corriges a mano, `actualizar_buscador_desde_excel.py` es el único comando que hace falta correr — nunca se edita `data.js` directamente.
 
+## Seguridad y Arquitectura de Producción
+
+El visualizador y buscador web fueron reforzados siguiendo estándares estrictos de ciberseguridad institucional (OWASP Top 10 / directrices CWE):
+- **Autenticación con roles (`server.py`)**: Servicio HTTP ligero en Python con base de datos SQLite (`database/fcv_auth.db`), contraseñas hasheadas con SHA-256 + salt criptográfica, comparación de tiempo constante (`secrets.compare_digest`) y protección contra fuerza bruta (bloqueo de 30s tras 5 intentos fallidos).
+- **Prevención DOM XSS (CWE-79 / CWE-116)**: Construcción 100% nativa con nodos DOM (`document.createElement`, `textContent`) — sin uso de `innerHTML` inseguro.
+- **Content Security Policy (CSP) estricta**: Cero CDNs externas. Tipografías (Montserrat, Inter) y logos alojados localmente para mitigar fallas de SRI (CWE-345) y fugas a terceros (CWE-200).
+- **Anti-Clickjacking (CWE-1021)**: Aplicado con cabeceras `X-Frame-Options: SAMEORIGIN` y `frame-ancestors 'self'`.
+- **Privacidad del Servidor (CWE-497)**: Cabecera ofuscada a `Server: FCV-SecureServer`; bloqueo total por URL a `database/` y archivos `.db` (HTTP 403 Prohibido).
+
 ## Nota sobre los datos
 
-Este repo **no incluye** ninguna acta real, el Excel generado, ni `data.js` — esos archivos tienen cédulas y nombres reales de empleados y quedan excluidos vía `.gitignore`. Para probar el pipeline sin datos reales, usa `generar_actas_prueba.py`, que genera actas ficticias con la misma estructura de tabla.
+Este repositorio **no incluye** ninguna acta real, ni el Excel generado, ni `data.js` — dichos archivos contienen información confidencial (cédulas, nombres reales y documentos médicos/administrativos) y están estrictamente protegidos mediante `.gitignore`.
+
+Para pruebas de desarrollo del buscador web sin datos sensibles, se incluye la plantilla [`data.example.js`](data.example.js):
+```bash
+cp data.example.js data.js
+```
 
 ## Cómo correrlo
 
@@ -44,21 +58,23 @@ python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 
+# 1. Ejecución del pipeline de procesamiento (opcional si se prueba con datos de ejemplo)
 # Credenciales de Azure Document Intelligence (nivel Free F0)
 export AZURE_DOCINTEL_ENDPOINT="https://TU-RECURSO.cognitiveservices.azure.com/"
 export AZURE_DOCINTEL_KEY="tu-clave"
 
-# Probar con actas ficticias (no hace falta tener actas reales)
 python generar_actas_prueba.py
 python dividir_pdfs.py
 python procesar_actas.py
-
-# Después de revisar/corregir actas_index.xlsx a mano:
 python actualizar_buscador_desde_excel.py
 
-# Abrir buscador_actas.html en el navegador
+# 2. Iniciar el Servidor Seguro de Búsqueda
+python3 server.py 8080
+
+# Ingresar a http://127.0.0.1:8080 en el navegador.
 ```
 
 ## Stack
 
-Python (Azure AI Document Intelligence, PyMuPDF, openpyxl) + HTML/CSS/JS sin frameworks para el buscador.
+Python (Azure AI Document Intelligence, PyMuPDF, openpyxl, SQLite3) + HTML5/CSS3/JS nativo (accesibilidad WCAG AAA, modo Claro/Oscuro, tipografías locales).
+

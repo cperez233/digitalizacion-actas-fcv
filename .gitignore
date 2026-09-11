@@ -1,0 +1,41 @@
+# ==============================================================================
+# REGLAS DE SEGURIDAD Y PRIVACIDAD - CIBERSEGURIDAD FCV
+# Prevención de Fuga de Información Sensible (Habeas Data / Datos Médicos)
+# ==============================================================================
+
+# 1. Datos reales de personas y pacientes (NUNCA deben subirse a repositorios públicos)
+actas_pdf/
+actas_pdf_originales/
+actas_organizadas/
+actas_organizadas/**
+actas_index.xlsx
+data.js
+sedes.txt
+
+# 2. Base de datos y credenciales del backend
+database/
+*.db
+*.sqlite
+*.sqlite3
+.env
+*.key
+*.pem
+
+# 3. Documentación interna de seguridad y reportes técnicos de vulnerabilidades
+DIRECTRICES/
+DIRECTRICES/**
+*.pdf
+
+# 4. Entornos virtuales y caché de Python
+venv/
+.venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 5. Archivos de depuración y sistema operativo
+*.log
+.DS_Store
+Thumbs.db
