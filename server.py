@@ -228,7 +228,7 @@ class SecureHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
     def end_headers(self):
         self.send_header(
             "Content-Security-Policy",
-            "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; object-src 'none'; frame-ancestors 'self'; base-uri 'self'; form-action 'self';"
+            "default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; object-src 'none'; frame-ancestors 'self'; base-uri 'self'; form-action 'self';"
         )
         self.send_header("X-Frame-Options", "SAMEORIGIN")
         self.send_header("X-Content-Type-Options", "nosniff")

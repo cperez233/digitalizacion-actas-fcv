@@ -12,7 +12,7 @@
     Header always set X-Content-Type-Options "nosniff"
     
     # Content Security Policy (CWE-693)
-    Header always set Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; object-src 'none'; frame-ancestors 'self'; base-uri 'self'; form-action 'self';"
+    Header always set Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; object-src 'none'; frame-ancestors 'self'; base-uri 'self'; form-action 'self';"
     
     # Política de Referrer
     Header always set Referrer-Policy "strict-origin-when-cross-origin"

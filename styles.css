@@ -267,6 +267,14 @@ h1, h2, h3, h4, h5, h6 {
   animation: shake 0.35s ease;
 }
 
+.login-error-alert.visible {
+  display: flex;
+}
+
+.login-error-alert svg {
+  flex-shrink: 0;
+}
+
 @keyframes shake {
   0%, 100% { transform: translateX(0); }
   20%, 60% { transform: translateX(-5px); }

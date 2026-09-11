@@ -300,12 +300,12 @@ document.addEventListener('DOMContentLoaded', () => {
   function mostrarErrorLogin(msg) {
     if (!loginErrorAlert || !loginErrorMsg) return;
     loginErrorMsg.textContent = msg;
-    loginErrorAlert.style.display = 'flex';
+    loginErrorAlert.classList.add('visible');
   }
 
   function ocultarErrorLogin() {
     if (!loginErrorAlert) return;
-    loginErrorAlert.style.display = 'none';
+    loginErrorAlert.classList.remove('visible');
   }
 
   if (togglePassBtn && loginPassInput) {
